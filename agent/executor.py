@@ -65,7 +65,20 @@ def execute(cfg: Config, sql: str) -> ExecutionResult:
     Retries once on any Snowflake-side error (covers a dropped connection
     or a warehouse still resuming from auto-suspend), each attempt with
     its own fresh connection, then surfaces a clear ExecutorError instead
-    of letting a raw connector exception escape to the pipeline."""
+    of letting a raw connector exception escape to the pipeline.
+
+    Explicitly issues `USE WAREHOUSE` before the real query rather than
+    relying solely on `connect(warehouse=...)` -- live-verified this
+    matters: with `AUTO_SUSPEND=60` on the warehouse and human-paced chat
+    (each query on its own fresh connection now, per the fix above), a
+    warehouse that suspended between turns produced "No active warehouse
+    selected in the current session" on the very first query of a new
+    session, on *both* retry attempts, even though `warehouse=` was
+    correctly set in `connect()`. The connect-time warehouse argument's
+    implicit activation isn't guaranteed to finish before the first query
+    is dispatched when the warehouse needs to resume from suspend; a
+    separate, synchronous `USE WAREHOUSE` statement blocks until the
+    warehouse is actually active before the real query ever runs."""
     last_exc: Optional[Exception] = None
     for attempt in (1, 2):
         conn = _new_connection(cfg)
@@ -73,6 +86,7 @@ def execute(cfg: Config, sql: str) -> ExecutionResult:
             cursor = conn.cursor(snowflake.connector.DictCursor)
             start = time.perf_counter()
             try:
+                cursor.execute(f'USE WAREHOUSE "{cfg.snowflake_warehouse}"')
                 cursor.execute(sql)
                 rows = cursor.fetchall()
                 elapsed = time.perf_counter() - start

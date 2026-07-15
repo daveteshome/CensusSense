@@ -1,0 +1,1790 @@
+[
+  {
+    "FIELD_NAME": "Total",
+    "COLUMN_ID": "P0010001",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of one race",
+    "COLUMN_ID": "P0010002",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White alone",
+    "COLUMN_ID": "P0010003",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American alone",
+    "COLUMN_ID": "P0010004",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native alone",
+    "COLUMN_ID": "P0010005",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Asian alone",
+    "COLUMN_ID": "P0010006",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Native Hawaiian and Other Pacific Islander alone",
+    "COLUMN_ID": "P0010007",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Some Other Race alone",
+    "COLUMN_ID": "P0010008",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of two or more races",
+    "COLUMN_ID": "P0010009",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of two races",
+    "COLUMN_ID": "P0010010",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American",
+    "COLUMN_ID": "P0010011",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native",
+    "COLUMN_ID": "P0010012",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Asian",
+    "COLUMN_ID": "P0010013",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010014",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Some Other Race",
+    "COLUMN_ID": "P0010015",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native",
+    "COLUMN_ID": "P0010016",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian",
+    "COLUMN_ID": "P0010017",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010018",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Some Other Race",
+    "COLUMN_ID": "P0010019",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0010020",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010021",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0010022",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010023",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Asian; Some Other Race",
+    "COLUMN_ID": "P0010024",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010025",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of three races",
+    "COLUMN_ID": "P0010026",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native",
+    "COLUMN_ID": "P0010027",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian",
+    "COLUMN_ID": "P0010028",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010029",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Some Other Race",
+    "COLUMN_ID": "P0010030",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0010031",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010032",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0010033",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010034",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Some Other Race",
+    "COLUMN_ID": "P0010035",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010036",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0010037",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010038",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0010039",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010040",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Some Other Race",
+    "COLUMN_ID": "P0010041",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010042",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010043",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0010044",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010045",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010046",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of four races",
+    "COLUMN_ID": "P0010047",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0010048",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010049",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0010050",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010051",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Some Other Race",
+    "COLUMN_ID": "P0010052",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010053",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010054",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0010055",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010056",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010057",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010058",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0010059",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010060",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010061",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010062",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of five races",
+    "COLUMN_ID": "P0010063",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0010064",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0010065",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010066",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010067",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010068",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010069",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of six races",
+    "COLUMN_ID": "P0010070",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0010071",
+    "COLUMN_TOPIC": "RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Total",
+    "COLUMN_ID": "P0020001",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Hispanic or Latino",
+    "COLUMN_ID": "P0020002",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Not Hispanic or Latino",
+    "COLUMN_ID": "P0020003",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of one race",
+    "COLUMN_ID": "P0020004",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White alone",
+    "COLUMN_ID": "P0020005",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American alone",
+    "COLUMN_ID": "P0020006",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native alone",
+    "COLUMN_ID": "P0020007",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Asian alone",
+    "COLUMN_ID": "P0020008",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Native Hawaiian and Other Pacific Islander alone",
+    "COLUMN_ID": "P0020009",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Some Other Race alone",
+    "COLUMN_ID": "P0020010",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of two or more races",
+    "COLUMN_ID": "P0020011",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of two races",
+    "COLUMN_ID": "P0020012",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American",
+    "COLUMN_ID": "P0020013",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native",
+    "COLUMN_ID": "P0020014",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Asian",
+    "COLUMN_ID": "P0020015",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020016",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Some Other Race",
+    "COLUMN_ID": "P0020017",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native",
+    "COLUMN_ID": "P0020018",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian",
+    "COLUMN_ID": "P0020019",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020020",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Some Other Race",
+    "COLUMN_ID": "P0020021",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0020022",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020023",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0020024",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020025",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Asian; Some Other Race",
+    "COLUMN_ID": "P0020026",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020027",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of three races",
+    "COLUMN_ID": "P0020028",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native",
+    "COLUMN_ID": "P0020029",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian",
+    "COLUMN_ID": "P0020030",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020031",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Some Other Race",
+    "COLUMN_ID": "P0020032",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0020033",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020034",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0020035",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020036",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Some Other Race",
+    "COLUMN_ID": "P0020037",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020038",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0020039",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020040",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0020041",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020042",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Some Other Race",
+    "COLUMN_ID": "P0020043",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020044",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020045",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0020046",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020047",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020048",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of four races",
+    "COLUMN_ID": "P0020049",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0020050",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020051",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0020052",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020053",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Some Other Race",
+    "COLUMN_ID": "P0020054",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020055",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020056",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0020057",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020058",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020059",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020060",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0020061",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020062",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020063",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020064",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of five races",
+    "COLUMN_ID": "P0020065",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0020066",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0020067",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020068",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020069",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020070",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020071",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Population of six races",
+    "COLUMN_ID": "P0020072",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0020073",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "COLUMN_UNIVERSE": "Total population"
+  },
+  {
+    "FIELD_NAME": "Total",
+    "COLUMN_ID": "P0030001",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of one race",
+    "COLUMN_ID": "P0030002",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White alone",
+    "COLUMN_ID": "P0030003",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American alone",
+    "COLUMN_ID": "P0030004",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native alone",
+    "COLUMN_ID": "P0030005",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Asian alone",
+    "COLUMN_ID": "P0030006",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Native Hawaiian and Other Pacific Islander alone",
+    "COLUMN_ID": "P0030007",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Some Other Race alone",
+    "COLUMN_ID": "P0030008",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of two or more races",
+    "COLUMN_ID": "P0030009",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of two races",
+    "COLUMN_ID": "P0030010",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American",
+    "COLUMN_ID": "P0030011",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native",
+    "COLUMN_ID": "P0030012",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Asian",
+    "COLUMN_ID": "P0030013",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030014",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Some Other Race",
+    "COLUMN_ID": "P0030015",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native",
+    "COLUMN_ID": "P0030016",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian",
+    "COLUMN_ID": "P0030017",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030018",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Some Other Race",
+    "COLUMN_ID": "P0030019",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0030020",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030021",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0030022",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030023",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Asian; Some Other Race",
+    "COLUMN_ID": "P0030024",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030025",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of three races",
+    "COLUMN_ID": "P0030026",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native",
+    "COLUMN_ID": "P0030027",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian",
+    "COLUMN_ID": "P0030028",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030029",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Some Other Race",
+    "COLUMN_ID": "P0030030",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0030031",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030032",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0030033",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030034",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Some Other Race",
+    "COLUMN_ID": "P0030035",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030036",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0030037",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030038",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0030039",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030040",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Some Other Race",
+    "COLUMN_ID": "P0030041",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030042",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030043",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0030044",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030045",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030046",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of four races",
+    "COLUMN_ID": "P0030047",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0030048",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030049",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0030050",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030051",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Some Other Race",
+    "COLUMN_ID": "P0030052",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030053",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030054",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0030055",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030056",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030057",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030058",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0030059",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030060",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030061",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030062",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of five races",
+    "COLUMN_ID": "P0030063",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0030064",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0030065",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030066",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030067",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030068",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030069",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of six races",
+    "COLUMN_ID": "P0030070",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0030071",
+    "COLUMN_TOPIC": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Total",
+    "COLUMN_ID": "P0040001",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Hispanic or Latino",
+    "COLUMN_ID": "P0040002",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Not Hispanic or Latino",
+    "COLUMN_ID": "P0040003",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of one race",
+    "COLUMN_ID": "P0040004",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White alone",
+    "COLUMN_ID": "P0040005",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American alone",
+    "COLUMN_ID": "P0040006",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native alone",
+    "COLUMN_ID": "P0040007",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Asian alone",
+    "COLUMN_ID": "P0040008",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Native Hawaiian and Other Pacific Islander alone",
+    "COLUMN_ID": "P0040009",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Some Other Race alone",
+    "COLUMN_ID": "P0040010",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of two or more races",
+    "COLUMN_ID": "P0040011",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of two races",
+    "COLUMN_ID": "P0040012",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American",
+    "COLUMN_ID": "P0040013",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native",
+    "COLUMN_ID": "P0040014",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Asian",
+    "COLUMN_ID": "P0040015",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040016",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Some Other Race",
+    "COLUMN_ID": "P0040017",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native",
+    "COLUMN_ID": "P0040018",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian",
+    "COLUMN_ID": "P0040019",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040020",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Some Other Race",
+    "COLUMN_ID": "P0040021",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0040022",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040023",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0040024",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040025",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Asian; Some Other Race",
+    "COLUMN_ID": "P0040026",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040027",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of three races",
+    "COLUMN_ID": "P0040028",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native",
+    "COLUMN_ID": "P0040029",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian",
+    "COLUMN_ID": "P0040030",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040031",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Some Other Race",
+    "COLUMN_ID": "P0040032",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0040033",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040034",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0040035",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040036",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Some Other Race",
+    "COLUMN_ID": "P0040037",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040038",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0040039",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040040",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0040041",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040042",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Some Other Race",
+    "COLUMN_ID": "P0040043",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040044",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040045",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0040046",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040047",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040048",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of four races",
+    "COLUMN_ID": "P0040049",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian",
+    "COLUMN_ID": "P0040050",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040051",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Some Other Race",
+    "COLUMN_ID": "P0040052",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040053",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Some Other Race",
+    "COLUMN_ID": "P0040054",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040055",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040056",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0040057",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040058",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040059",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040060",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0040061",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040062",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040063",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040064",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of five races",
+    "COLUMN_ID": "P0040065",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander",
+    "COLUMN_ID": "P0040066",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Some Other Race",
+    "COLUMN_ID": "P0040067",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040068",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040069",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040070",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040071",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Population of six races",
+    "COLUMN_ID": "P0040072",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; Some Other Race",
+    "COLUMN_ID": "P0040073",
+    "COLUMN_TOPIC": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "COLUMN_UNIVERSE": "Total population 18 years and over"
+  },
+  {
+    "FIELD_NAME": "Total",
+    "COLUMN_ID": "P0050001",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "Institutionalized population",
+    "COLUMN_ID": "P0050002",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "Correctional facilities for adults",
+    "COLUMN_ID": "P0050003",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "Juvenile facilities",
+    "COLUMN_ID": "P0050004",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "Nursing facilities/Skilled-nursing facilities",
+    "COLUMN_ID": "P0050005",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "Other institutional facilities",
+    "COLUMN_ID": "P0050006",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "Noninstitutionalized population",
+    "COLUMN_ID": "P0050007",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "College/University student housing",
+    "COLUMN_ID": "P0050008",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "Military quarters",
+    "COLUMN_ID": "P0050009",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  },
+  {
+    "FIELD_NAME": "Other noninstitutional facilities",
+    "COLUMN_ID": "P0050010",
+    "COLUMN_TOPIC": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "COLUMN_UNIVERSE": "Population in group quarters"
+  }
+]

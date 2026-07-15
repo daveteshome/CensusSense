@@ -1,0 +1,72 @@
+[
+  {
+    "table": "2019_CBG_B01",
+    "column": "B01001e1",
+    "year": "2019",
+    "description": "Sex By Age: Total",
+    "table_topics": "Age and Sex",
+    "universe": "Total population",
+    "aggregation_type": "SUM",
+    "moe_column": "B01001m1"
+  },
+  {
+    "table": "2020_CBG_B01",
+    "column": "B01001e1",
+    "year": "2020",
+    "description": "Sex By Age: Total",
+    "table_topics": "Age and Sex",
+    "universe": "Total population",
+    "aggregation_type": "SUM",
+    "moe_column": "B01001m1"
+  },
+  {
+    "table": "2019_CBG_B01",
+    "column": "B01003e1",
+    "year": "2019",
+    "description": "Total Population: Total",
+    "table_topics": "Age and Sex",
+    "universe": "Total population",
+    "aggregation_type": "SUM",
+    "moe_column": "B01003m1"
+  },
+  {
+    "table": "2020_CBG_B01",
+    "column": "B01003e1",
+    "year": "2020",
+    "description": "Total Population: Total",
+    "table_topics": "Age and Sex",
+    "universe": "Total population",
+    "aggregation_type": "SUM",
+    "moe_column": "B01003m1"
+  },
+  {
+    "table": "2019_CBG_B19",
+    "column": "B19013e1",
+    "year": "2019",
+    "description": "Median Household Income In The Past 12 Months: Median household income in the past 12 months",
+    "table_topics": "Income Households Families Individuals",
+    "universe": "Households",
+    "aggregation_type": "MEDIAN",
+    "moe_column": "B19013m1"
+  },
+  {
+    "table": "2019_CBG_B19",
+    "column": "B19301e1",
+    "year": "2019",
+    "description": "Per Capita Income In The Past 12 Months: Per capita income",
+    "table_topics": "Income Households Families Individuals",
+    "universe": "Total population",
+    "aggregation_type": "MEDIAN",
+    "moe_column": "B19301m1"
+  },
+  {
+    "table": "2019_CBG_B25",
+    "column": "B25064e1",
+    "year": "2019",
+    "description": "Median Gross Rent (Dollars): Median gross rent",
+    "table_topics": "Renter Costs",
+    "universe": "Renter-occupied housing units paying cash rent",
+    "aggregation_type": "MEDIAN",
+    "moe_column": "B25064m1"
+  }
+]

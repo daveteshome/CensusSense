@@ -1,0 +1,17 @@
+{
+  "states": {
+    "texas": {"abbrev": "TX", "fips": "48", "name": "Texas"},
+    "tx": {"abbrev": "TX", "fips": "48", "name": "Texas"},
+    "california": {"abbrev": "CA", "fips": "06", "name": "California"},
+    "ca": {"abbrev": "CA", "fips": "06", "name": "California"}
+  },
+  "counties": {
+    "48": [
+      {"name": "Travis County", "fips": "453"},
+      {"name": "Harris County", "fips": "201"}
+    ],
+    "06": [
+      {"name": "Los Angeles County", "fips": "037"}
+    ]
+  }
+}

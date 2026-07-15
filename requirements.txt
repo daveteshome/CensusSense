@@ -1,0 +1,10 @@
+streamlit>=1.38
+snowflake-connector-python>=3.12
+openai>=1.50
+langgraph>=0.2
+rapidfuzz>=3.9
+sqlglot>=25.0
+python-dotenv>=1.0
+requests>=2.32
+pytest>=8.3
+pytest-mock>=3.14

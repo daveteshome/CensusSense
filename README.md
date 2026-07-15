@@ -26,7 +26,7 @@ impossible rather than just discouraged by prompting.
 | Deployment | Railway |
 | SQL generation | Deterministic (LLM never generates SQL or names a table/column) |
 | Conversation memory | LangGraph checkpointer, SQLite-backed, per-account persisted |
-| Tests | 226 automated (unit + integration) |
+| Tests | 235 automated (unit + integration) |
 
 ## Live Demo
 
@@ -238,7 +238,7 @@ python -m metadata.build_concept_catalog
 pytest
 ```
 
-226 automated tests (unit + integration), all mocked at the LLM/Snowflake
+235 automated tests (unit + integration), all mocked at the LLM/Snowflake
 boundary so the suite runs in seconds with no live credentials required.
 Several tests run against the real, committed `data/metadata.json` and
 `data/concept_catalog.json` as a regression check, not just small
@@ -258,7 +258,7 @@ philosophy, trade-offs, and what's still missing.
 | Guardrails against off-topic or inappropriate responses | Gatekeeper classifies `OUT_OF_SCOPE` / `INAPPROPRIATE` distinctly; SQL validator allow-list as independent defense-in-depth |
 | Degrade gracefully — no hallucination, empty response, or unhandled error | Every node wraps LLM/Snowflake calls; failures route to a deterministic guardrail message, never a raw error or invented number |
 | Handle ambiguous, partially-matching, conflicting/underspecified, or reasonable-but-unanswerable queries | `agent/resolver.py` + `agent/guardrails.py` — see Guardrails in practice, below |
-| Meaningful tests | 226 automated tests (unit + integration) plus extensive live testing — see Testing above and `REFLECTION.md` |
+| Meaningful tests | 235 automated tests (unit + integration) plus extensive live testing — see Testing above and `REFLECTION.md` |
 
 ## Guardrails in practice
 

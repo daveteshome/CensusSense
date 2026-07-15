@@ -1,6 +1,6 @@
 # CensusSense — Testing Analysis
 
-Compiled from: 226 automated tests (unit + integration, mocked LLM/Snowflake),
+Compiled from: 235 automated tests (unit + integration, mocked LLM/Snowflake),
 dozens of live manual tests against the real Groq/Snowflake backends
 throughout development, and a structured 68-query battery across 11
 categories run **twice** against the live pipeline — once on

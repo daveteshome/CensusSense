@@ -117,6 +117,36 @@ def test_build_message_geography_needs_confirmation_asks_did_you_mean():
     assert "Did you mean Texas?" in msg
 
 
+def test_build_message_ambiguous_county_asks_which_state():
+    state = {
+        "question": "population of Washington County",
+        "gatekeeper": _gatekeeper(status="IN_SCOPE", concept="population", county="Washington County"),
+        "year_resolution": YearResolution(status="RESOLVED", year="2020"),
+        "geography_resolution": GeographyResolution(
+            status="AMBIGUOUS_COUNTY", candidate_state_names=["Alabama", "Arkansas", "Colorado"]
+        ),
+    }
+    msg = build_message(state)
+    assert "Washington County" in msg
+    assert "Alabama" in msg
+    assert "which state" in msg.lower()
+
+
+def test_build_message_county_not_found_without_state_does_not_claim_nationwide():
+    # Regression test: before the fix this path fell through to
+    # geography_not_found_message(gatekeeper.state), which is empty here
+    # ('""') and would have produced a confusing 'called ""' message.
+    state = {
+        "question": "population of Xyzzyplex County",
+        "gatekeeper": _gatekeeper(status="IN_SCOPE", concept="population", county="Xyzzyplex County"),
+        "year_resolution": YearResolution(status="RESOLVED", year="2020"),
+        "geography_resolution": GeographyResolution(status="NOT_FOUND"),
+    }
+    msg = build_message(state)
+    assert "Xyzzyplex County" in msg
+    assert '""' not in msg
+
+
 def test_build_message_unsupported_year():
     state = {
         "question": "population in 2025",

@@ -2,9 +2,20 @@
 Snowflake with a bounded timeout and a single retry, and captures the
 timing/row-count data the structured logs and latency budget rely on.
 
-A dedicated, least-privilege connection (see sql/setup_role.sql) is
-reused across calls rather than reconnecting per request, with lazy
-reconnect if the cached connection has gone stale.
+A fresh connection is opened per call and always closed when done -- it
+is never cached or shared across calls. A single shared, cached
+connection was tried first and found to be unsafe under real deployed
+conditions: Streamlit serves multiple accounts/sessions from the same
+process, and two calls reaching a shared connection object close
+together (not necessarily truly simultaneous -- different accounts
+active a few seconds apart is enough) collide on the same underlying
+Snowflake session. This surfaces as the connector logging "Session with
+id X is already connected! Connecting to a new session." and a failed
+query for whichever call lost the race -- confirmed live against the
+Railway deployment with two different demo accounts. Opening a
+dedicated connection per call costs a bit of latency (sub-second) but
+removes the entire bug class, which matters more than the small
+performance cost for a human-paced chat app.
 """
 
 import logging
@@ -32,9 +43,6 @@ class ExecutionResult:
     exec_time_seconds: float
 
 
-_cached_connection: Optional[snowflake.connector.SnowflakeConnection] = None
-
-
 def _new_connection(cfg: Config) -> snowflake.connector.SnowflakeConnection:
     return snowflake.connector.connect(
         account=cfg.snowflake_account,
@@ -49,44 +57,35 @@ def _new_connection(cfg: Config) -> snowflake.connector.SnowflakeConnection:
     )
 
 
-def _get_connection(cfg: Config) -> snowflake.connector.SnowflakeConnection:
-    global _cached_connection
-    if _cached_connection is None or _cached_connection.is_closed():
-        _cached_connection = _new_connection(cfg)
-    return _cached_connection
-
-
-def _reset_connection() -> None:
-    global _cached_connection
-    if _cached_connection is not None:
-        try:
-            _cached_connection.close()
-        except Exception:
-            pass
-    _cached_connection = None
-
-
 def execute(cfg: Config, sql: str) -> ExecutionResult:
-    """Runs `sql` (already built + validated) against Snowflake. Retries
-    once, with a fresh connection, on any Snowflake-side error (covers a
-    dropped/suspended-warehouse-resume edge case), then surfaces a clear
-    ExecutorError instead of letting a raw connector exception escape to
-    the pipeline."""
+    """Runs `sql` (already built + validated) against Snowflake. Opens a
+    dedicated connection for this call only -- never shared or cached
+    across calls, so two requests (different accounts, or anything else
+    that overlaps) can never collide on the same underlying session.
+    Retries once on any Snowflake-side error (covers a dropped connection
+    or a warehouse still resuming from auto-suspend), each attempt with
+    its own fresh connection, then surfaces a clear ExecutorError instead
+    of letting a raw connector exception escape to the pipeline."""
     last_exc: Optional[Exception] = None
     for attempt in (1, 2):
-        conn = _get_connection(cfg)
-        cursor = conn.cursor(snowflake.connector.DictCursor)
-        start = time.perf_counter()
+        conn = _new_connection(cfg)
         try:
-            cursor.execute(sql)
-            rows = cursor.fetchall()
-            elapsed = time.perf_counter() - start
-            return ExecutionResult(rows=rows, row_count=len(rows), exec_time_seconds=elapsed)
-        except Exception as exc:  # noqa: BLE001 - deliberately broad, see docstring
-            last_exc = exc
-            logger.warning("snowflake query attempt %d failed: %s", attempt, exc)
-            _reset_connection()
+            cursor = conn.cursor(snowflake.connector.DictCursor)
+            start = time.perf_counter()
+            try:
+                cursor.execute(sql)
+                rows = cursor.fetchall()
+                elapsed = time.perf_counter() - start
+                return ExecutionResult(rows=rows, row_count=len(rows), exec_time_seconds=elapsed)
+            except Exception as exc:
+                last_exc = exc
+                logger.warning("snowflake query attempt %d failed: %s", attempt, exc)
+            finally:
+                cursor.close()
         finally:
-            cursor.close()
+            try:
+                conn.close()
+            except Exception:
+                pass
 
     raise ExecutorError(f"query failed after retry: {last_exc}") from last_exc

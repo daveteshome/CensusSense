@@ -157,6 +157,18 @@ def county_not_found_message(county_query: str, state_name: str) -> str:
     return f'I couldn\'t find a county called "{county_query}" in {state_name}. Could you check the spelling?'
 
 
+def county_ambiguous_message(county_query: str, candidate_state_names: list[str]) -> str:
+    if len(candidate_state_names) > 6:
+        shown = candidate_state_names[:6]
+        options = ", ".join(shown) + f", and {len(candidate_state_names) - 6} other states"
+    else:
+        options = ", ".join(candidate_state_names)
+    return (
+        f'There\'s a "{county_query}" in more than one state ({options}). '
+        "Which state did you mean?"
+    )
+
+
 def empty_result_message() -> str:
     return "I couldn't find any Census records matching your request. Please verify the geography or try a broader region."
 
@@ -209,9 +221,14 @@ def build_message(state: dict) -> str:
     if geography_resolution is not None and geography_resolution.status == "NEEDS_CONFIRMATION":
         query = gatekeeper.state if gatekeeper is not None else ""
         return geography_confirmation_message(query, geography_resolution.suggested_state_name)
+    if geography_resolution is not None and geography_resolution.status == "AMBIGUOUS_COUNTY":
+        query = gatekeeper.county if gatekeeper is not None else ""
+        return county_ambiguous_message(query, geography_resolution.candidate_state_names)
     if geography_resolution is not None and geography_resolution.status == "NOT_FOUND":
         if geography_resolution.state_name and gatekeeper is not None and gatekeeper.county:
             return county_not_found_message(gatekeeper.county, geography_resolution.state_name)
+        if gatekeeper is not None and gatekeeper.county and not gatekeeper.state:
+            return county_not_found_message(gatekeeper.county, "any state")
         query = gatekeeper.state if gatekeeper is not None else ""
         return geography_not_found_message(query)
 

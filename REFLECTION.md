@@ -332,6 +332,60 @@ shown to the user but not persisted into history; deliberate guardrail
 decisions (declines, clarifications, "did you mean X?") still are, since
 those genuinely are meaningful context for a natural follow-up turn.
 
+**A Snowflake connector concurrency bug surfaced only after deploying to
+Railway, not in local testing.** The executor cached a single Snowflake
+connection at module scope and reused it across every query in the
+process, on the reasoning that opening a fresh connection per query was
+wasted latency. That's safe for one person testing locally but not for a
+Streamlit app serving multiple signed-in accounts from the same process:
+two calls reaching the shared connection within a short window of each
+other (not necessarily truly concurrent -- a different account active a
+few seconds later was enough) collided on the same underlying Snowflake
+session. The user reported "something went wrong" recurring across
+different accounts and different questions on the deployed app; two
+rounds of pasted Railway logs made the mechanism concrete rather than
+theoretical -- the connector itself logging `Session with id X is
+already connected! Connecting to a new session.`, and a clear
+before/after pair where `account-evaluator3` succeeded on a question and
+`account-evaluator1` failed on the same question roughly 30 seconds
+later. Fixed by removing the cached connection entirely: `execute()` now
+opens a dedicated connection per call and always closes it in a
+`finally` block, on both the first attempt and the retry, so no two
+callers can ever share a session (`agent/executor.py`). The latency cost
+is sub-second and worth it for correctness in a multi-account deployment.
+
+**A county mentioned without its state was silently answered as
+nationwide, not declined.** Found by accident while re-verifying the
+connection fix above: asking "median household income in Travis County"
+(no "Texas" in the question) returned $72,918 -- the real *nationwide*
+median -- while the answer text still said "Travis County" (Travis
+County's real value is $92,616, confirmed by running both the filtered
+and unfiltered SQL directly against Snowflake). Traced to
+`resolve_geography`: `gk.state` was an empty string (the Gatekeeper
+correctly hadn't invented a state the user never said), and
+`resolve_geography(gk.state or None, gk.county or None, store)` turned
+that empty string into `None`, hitting the function's original
+short-circuit for "no state mentioned → nationwide, no filter" -- which
+discarded the county entirely without even looking at it. This is worse
+than a plain decline: the response *sounds* specific and confident but
+answers a different question than the one asked. Most county names
+aren't nationally unique ("Washington County" exists in 31 states), so
+the fix couldn't just silently pick a state either. `resolve_geography`
+now searches every state's county list when no state is given: exactly
+one plausible match resolves directly (`"Travis County"` is unique to
+Texas), more than one asks which state instead of guessing
+(`AMBIGUOUS_COUNTY`), and none found declines rather than falling back to
+nationwide. The naive version of this cross-state search was itself
+briefly a false-positive generator worth naming: `fuzz.WRatio` against
+all ~3,100 counties at once matched a wholly nonsense query
+("Xyzzyplex County") in 23 different states, because nearly every county
+name shares the same " County" suffix and WRatio's partial-match scoring
+rewards that shared suffix on its own. Stripping the trailing
+designator word ("County"/"Parish"/"Borough"/etc.) before comparing, then
+scoring the core name with plain `fuzz.ratio`, fixed it -- verified
+empirically before settling on the threshold, the same way the state-name
+matcher's threshold was tuned earlier in the project.
+
 **Multi-geography *comparison*** ("How does Cook County compare to the
 national average?") is a different, still-unsupported case from ranking
 -- it needs two independently resolved geographies compared side by side
@@ -444,7 +498,7 @@ implementation time.
 
 ## Testing approach and what I'd add
 
-**226 automated tests**, unit + integration, all mocked at the LLM/
+**235 automated tests**, unit + integration, all mocked at the LLM/
 Snowflake boundary so the suite runs in a few seconds with no live
 credentials: normalization/ID-transform round-trips against the real,
 live-fetched Census dictionary (not synthetic fixtures); SQL builder and

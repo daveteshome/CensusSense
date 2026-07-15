@@ -65,6 +65,25 @@ def _strip_ranking_words(query: str) -> str:
 STATE_MATCH_THRESHOLD = 65
 COUNTY_MATCH_THRESHOLD = 75
 
+# Cross-state county search (no state given) needs its own, stricter rule
+# -- WRatio's partial-match leniency, fine for narrowing candidates within
+# one already-known state, falls apart once applied against all ~3,100
+# counties nationwide: nearly every US county name shares the same
+# " County" suffix, so WRatio's partial-ratio component alone put a
+# wholly nonsense query ("Xyzzyplex County") above COUNTY_MATCH_THRESHOLD
+# in 23 different states. Stripping the trailing designator word before
+# scoring, then using plain fuzz.ratio on just the core name, fixes it:
+# empirically, real minor typos ("Travs County" -> Travis County, 90.9)
+# still clear 80, while nonsense ("Narnia County") tops out at 76.9 and a
+# real place-but-not-a-county name ("Atlanta", not itself a county --
+# Atlanta sits in Fulton County) can still occasionally cross 80 against
+# an unrelated county (Atlantic County, NJ, 80.0 exactly) -- an accepted,
+# narrow residual risk of fuzzy matching, not solvable by threshold
+# tuning alone, and no worse than the same class of risk already accepted
+# in the single-state county match below.
+_COUNTY_DESIGNATORS = {"county", "parish", "borough", "municipio", "municipality", "island", "district", "city"}
+COUNTY_CROSS_STATE_THRESHOLD = 80
+
 # Below STATE_MATCH_THRESHOLD but above this, the best candidate is
 # plausible enough to ask about rather than silently reject outright --
 # "did you mean California?" rather than either guessing or a dead-end
@@ -97,13 +116,14 @@ class YearResolution:
 
 @dataclass(frozen=True)
 class GeographyResolution:
-    status: str  # "RESOLVED" | "NOT_FOUND" | "NEEDS_CONFIRMATION"
+    status: str  # "RESOLVED" | "NOT_FOUND" | "NEEDS_CONFIRMATION" | "AMBIGUOUS_COUNTY"
     state_fips: Optional[str] = None
     state_name: Optional[str] = None
     county_fips: Optional[str] = None
     county_name: Optional[str] = None
     corrected_state_name: Optional[str] = None  # set when typo-corrected
     suggested_state_name: Optional[str] = None  # set only when NEEDS_CONFIRMATION
+    candidate_state_names: list[str] = field(default_factory=list)  # set only when AMBIGUOUS_COUNTY
 
 
 def resolve_year(requested: Optional[str], store: MetadataStore) -> YearResolution:
@@ -195,13 +215,62 @@ def resolve_metric(query: str, store: MetadataStore, year: str) -> MetricResolut
     return MetricResolution(status="RESOLVED", entry=distinct[0].entry, candidates=distinct)
 
 
+def _county_core(name: str) -> str:
+    """Strips a trailing "County"/"Parish"/"Borough"/etc. designator so a
+    cross-state search compares core place names, not just whichever
+    strings happen to share the same common suffix."""
+    prefix, _, last_word = name.rpartition(" ")
+    if prefix and last_word.lower() in _COUNTY_DESIGNATORS:
+        return prefix
+    return name
+
+
+def _resolve_county_without_state(county_query: str, store: MetadataStore) -> GeographyResolution:
+    """A county mentioned with no state can't be safely treated as
+    "nationwide, no filter" -- unlike state names, most county names
+    aren't nationally unique (e.g. "Washington County" exists in dozens
+    of states), so silently dropping the county would answer a totally
+    different question than the one asked, and silently guessing a state
+    would risk answering with the wrong county entirely. Search every
+    state's county list instead: resolve directly only if exactly one
+    state has a plausible match (e.g. "Travis County" is unique to
+    Texas), otherwise ask which state rather than guess."""
+    query_core = _county_core(county_query)
+    matches: list[tuple[str, str, str, str]] = []  # (state_fips, state_name, county_fips, county_name)
+    for state_fips, counties in store.geography["counties"].items():
+        cores = [_county_core(c["name"]) for c in counties]
+        best = process.extractOne(query_core, cores, scorer=fuzz.ratio)
+        if best is not None and best[1] >= COUNTY_CROSS_STATE_THRESHOLD:
+            matched = counties[best[2]]
+            state_name = store.state_name_by_fips(state_fips)
+            matches.append((state_fips, state_name, matched["fips"], matched["name"]))
+
+    if not matches:
+        return GeographyResolution(status="NOT_FOUND")
+
+    if len(matches) == 1:
+        state_fips, state_name, county_fips, county_name = matches[0]
+        return GeographyResolution(
+            status="RESOLVED",
+            state_fips=state_fips,
+            state_name=state_name,
+            county_fips=county_fips,
+            county_name=county_name,
+        )
+
+    candidate_state_names = sorted({state_name for _, state_name, _, _ in matches})
+    return GeographyResolution(status="AMBIGUOUS_COUNTY", candidate_state_names=candidate_state_names)
+
+
 def resolve_geography(
     state_query: Optional[str],
     county_query: Optional[str],
     store: MetadataStore,
 ) -> GeographyResolution:
     if state_query is None:
-        return GeographyResolution(status="RESOLVED")  # nationwide: no geography filter
+        if not county_query:
+            return GeographyResolution(status="RESOLVED")  # nationwide: no geography filter
+        return _resolve_county_without_state(county_query, store)
 
     direct = store.resolve_state(state_query)
     corrected_name = None

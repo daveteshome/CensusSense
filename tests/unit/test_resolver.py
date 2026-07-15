@@ -91,6 +91,28 @@ def test_resolve_geography_county_not_in_state_not_found(store):
     assert res.state_fips == "48"  # state still resolved for a helpful message
 
 
+def test_resolve_geography_county_without_state_resolves_when_unique(store):
+    # Regression test for a real bug found via live testing: a county
+    # mentioned with no state used to be silently dropped entirely,
+    # falling through to nationwide -- "median household income in Travis
+    # County" (no "Texas" in the question) answered with the nationwide
+    # figure while the response text still said "Travis County". In this
+    # fixture "Travis County" only exists under Texas, so it should now
+    # resolve directly instead of going nationwide.
+    res = resolve_geography(None, "Travis County", store)
+    assert res.status == "RESOLVED"
+    assert res.state_fips == "48"
+    assert res.county_name == "Travis County"
+
+
+def test_resolve_geography_county_without_state_not_found_is_not_nationwide(store):
+    # A county name that matches nothing anywhere must decline, not
+    # silently fall back to a nationwide (unfiltered) answer.
+    res = resolve_geography(None, "Nonexistent County", store)
+    assert res.status == "NOT_FOUND"
+    assert res.state_fips is None
+
+
 # --- resolve_metric -------------------------------------------------------
 
 def test_resolve_metric_no_match_for_fixture_with_no_overlap(store):
@@ -285,3 +307,28 @@ class TestRealMetricRankerBehavior:
         assert res.status == "NEEDS_CONFIRMATION"
         assert res.state_fips is None  # not silently treated as resolved
         assert res.suggested_state_name is not None
+
+    def test_travis_county_without_state_resolves_to_texas_not_nationwide(self, real_store):
+        # The exact real bug, reproduced against the real dataset: before
+        # the fix, resolve_geography(None, "Travis County", ...) returned
+        # a bare RESOLVED with no geography at all (nationwide), silently
+        # discarding the county. "Travis County" is nationally unique, so
+        # it should now resolve directly to Texas.
+        res = resolve_geography(None, "Travis County", real_store)
+        assert res.status == "RESOLVED"
+        assert res.state_name == "Texas"
+        assert res.county_name == "Travis County"
+
+    def test_washington_county_without_state_is_ambiguous_not_a_silent_guess(self, real_store):
+        # "Washington County" exists in dozens of states -- resolving it
+        # to any single one without the user having said which would be a
+        # confident, silent wrong answer. Must ask instead of guess.
+        res = resolve_geography(None, "Washington County", real_store)
+        assert res.status == "AMBIGUOUS_COUNTY"
+        assert len(res.candidate_state_names) > 5
+        assert "Alabama" in res.candidate_state_names
+
+    def test_nonsense_county_without_state_is_not_found_not_nationwide(self, real_store):
+        res = resolve_geography(None, "Xyzzyplex County", real_store)
+        assert res.status == "NOT_FOUND"
+        assert res.state_fips is None

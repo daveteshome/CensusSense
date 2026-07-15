@@ -6,16 +6,8 @@ import agent.executor as executor_module
 from agent.executor import ExecutorError, execute
 
 
-@pytest.fixture(autouse=True)
-def reset_cached_connection():
-    executor_module._cached_connection = None
-    yield
-    executor_module._cached_connection = None
-
-
 def _fake_conn(cursor: MagicMock) -> MagicMock:
     conn = MagicMock()
-    conn.is_closed.return_value = False
     conn.cursor.return_value = cursor
     return conn
 
@@ -57,18 +49,63 @@ def test_execute_raises_executor_error_after_retry_exhausted(monkeypatch):
         execute(cfg=object(), sql="SELECT 1")
 
 
-def test_execute_reuses_cached_connection_across_calls(monkeypatch):
+def test_execute_opens_a_fresh_connection_per_call(monkeypatch):
+    # Regression test for a real, live-verified bug: a single connection
+    # shared/cached across calls collided when two different accounts hit
+    # the deployed app within a short window of each other (Snowflake
+    # logged "Session with id X is already connected!" and the losing
+    # call failed). Every call to execute() must open its own connection
+    # -- never reuse one across calls.
+    cursor_factory_calls = []
+
+    def new_cursor():
+        cursor = MagicMock()
+        cursor.fetchall.return_value = [{"VALUE": 1}]
+        return cursor
+
+    new_connection_calls = []
+
+    def fake_new_connection(cfg):
+        new_connection_calls.append(1)
+        return _fake_conn(new_cursor())
+
+    monkeypatch.setattr(executor_module, "_new_connection", fake_new_connection)
+
+    execute(cfg=object(), sql="SELECT 1")
+    execute(cfg=object(), sql="SELECT 1")
+
+    assert len(new_connection_calls) == 2
+
+
+def test_execute_closes_connection_after_success(monkeypatch):
     cursor = MagicMock()
     cursor.fetchall.return_value = [{"VALUE": 1}]
     conn = _fake_conn(cursor)
-    new_connection_calls = []
-    monkeypatch.setattr(
-        executor_module,
-        "_new_connection",
-        lambda cfg: (new_connection_calls.append(1), conn)[1],
-    )
+    monkeypatch.setattr(executor_module, "_new_connection", lambda cfg: conn)
 
     execute(cfg=object(), sql="SELECT 1")
-    execute(cfg=object(), sql="SELECT 1")
 
-    assert len(new_connection_calls) == 1
+    conn.close.assert_called_once()
+
+
+def test_execute_closes_every_connection_after_failure(monkeypatch):
+    cursor = MagicMock()
+    cursor.execute.side_effect = RuntimeError("still broken")
+    created_connections = []
+
+    def fake_new_connection(cfg):
+        conn = _fake_conn(cursor)
+        created_connections.append(conn)
+        return conn
+
+    monkeypatch.setattr(executor_module, "_new_connection", fake_new_connection)
+
+    with pytest.raises(ExecutorError):
+        execute(cfg=object(), sql="SELECT 1")
+
+    # Both attempts' connections must be closed, not just the last one --
+    # a leaked connection on the failing attempt would defeat the point
+    # of not caching/sharing them.
+    assert len(created_connections) == 2
+    for conn in created_connections:
+        conn.close.assert_called_once()

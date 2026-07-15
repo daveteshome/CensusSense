@@ -1,0 +1,35 @@
+[
+  {
+    "concept": "population",
+    "label": "Population",
+    "aliases": ["population", "total population", "residents", "people"],
+    "sources": {
+      "2019": {"table": "2019_CBG_B01", "column": "B01003e1"},
+      "2020": {"table": "2020_CBG_B01", "column": "B01003e1"}
+    }
+  },
+  {
+    "concept": "median_household_income",
+    "label": "Median Household Income",
+    "aliases": ["median household income", "household income", "income"],
+    "sources": {
+      "2019": {"table": "2019_CBG_B19", "column": "B19013e1"}
+    }
+  },
+  {
+    "concept": "per_capita_income",
+    "label": "Per Capita Income",
+    "aliases": ["per capita income", "average income per person", "income"],
+    "sources": {
+      "2019": {"table": "2019_CBG_B19", "column": "B19301e1"}
+    }
+  },
+  {
+    "concept": "median_gross_rent",
+    "label": "Median Gross Rent",
+    "aliases": ["median gross rent", "rent", "average rent"],
+    "sources": {
+      "2019": {"table": "2019_CBG_B25", "column": "B25064e1"}
+    }
+  }
+]

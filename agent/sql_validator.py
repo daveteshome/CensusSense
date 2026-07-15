@@ -12,7 +12,13 @@ from sqlglot import exp
 
 from metadata.metadata_store import MetadataStore
 
-ALWAYS_ALLOWED_COLUMNS = {"CENSUS_BLOCK_GROUP"}
+# CENSUS_BLOCK_GROUP is a real column on every fact table. VALUE and
+# GROUP_FIPS are aliases sql_builder.py itself generates (e.g. `SELECT
+# SUM(...) AS VALUE ... ORDER BY VALUE` in ranking queries) -- not real
+# Census columns, but referencing them back is exactly how SQL aliases
+# work, and they're never influenced by user input, only by our own
+# fixed query templates.
+ALWAYS_ALLOWED_COLUMNS = {"CENSUS_BLOCK_GROUP", "VALUE", "GROUP_FIPS"}
 
 
 class SqlValidationError(Exception):

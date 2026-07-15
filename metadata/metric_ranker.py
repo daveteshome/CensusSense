@@ -18,7 +18,23 @@ import math
 import re
 from collections import Counter
 
+from rapidfuzz import fuzz, process
+
 _TOKEN_RE = re.compile(r"[a-z0-9]+")
+
+# Tuned empirically against the real corpus vocabulary, same method as the
+# geography typo fix: genuine typos ("populaton"->population, "icnome"->
+# income, "medain"->median, "hosuing"->housing, "povrety"->poverty,
+# "emplyment"->employment) scored 83-95 with fuzz.ratio; risky unrelated
+# collisions ("weather"->father, "nation"->inflation) scored 77-80. 82 sits
+# in that gap. Known residual risk: "country"->"county" scores 92.3 (a
+# genuine 1-character edit apart) -- accepted because "country" is normally
+# caught by the Gatekeeper's glossary/out-of-scope handling before a bare
+# metric-only query ever reaches this ranker.
+_TOKEN_TYPO_THRESHOLD = 82
+# Short words are noisier for fuzzy matching and more likely to be a
+# legitimate distinct short word than a typo -- skip correction for them.
+_MIN_TOKEN_LENGTH_FOR_CORRECTION = 4
 
 # Deliberately small and generic (not census-specific): these words are
 # excluded only from the *coverage* signal (see query()), not from the
@@ -56,6 +72,32 @@ class MetricRanker:
         }
         self._doc_vectors = [self._vectorize(tokens) for tokens in doc_tokens]
         self._doc_meaningful_tokens = [_meaningful_tokens(d) for d in documents]
+        self._vocabulary = sorted(self._idf.keys())
+
+    def _correct_tokens(self, tokens: list[str]) -> list[str]:
+        """Query-side-only typo correction against the real corpus
+        vocabulary -- mirrors the geography typo fix in resolver.py, but
+        per-word rather than whole-phrase, since metric queries are
+        matched by token overlap, not a single fixed-list lookup."""
+        corrected = []
+        for token in tokens:
+            if token in self._idf or len(token) < _MIN_TOKEN_LENGTH_FOR_CORRECTION:
+                corrected.append(token)
+                continue
+            match = process.extractOne(token, self._vocabulary, scorer=fuzz.ratio)
+            if match is not None and match[1] >= _TOKEN_TYPO_THRESHOLD:
+                corrected.append(match[0])
+            else:
+                corrected.append(token)
+        return corrected
+
+    def correct_text(self, text: str) -> str:
+        """Public wrapper around the query-side typo correction, so a
+        caller can check the corrected text for an exact match before
+        falling back to fuzzy cosine ranking -- see agent/resolver.py's
+        resolve_metric, which needs this for typo'd bare metric words
+        that don't match anything verbatim but do after correction."""
+        return " ".join(self._correct_tokens(_tokenize(text)))
 
     def _vectorize(self, tokens: list[str]) -> dict[str, float]:
         term_frequency = Counter(tokens)
@@ -81,9 +123,12 @@ class MetricRanker:
         that: a document containing all of the query's distinctive
         words always outranks one containing only one of them.
         """
-        query_tokens = _tokenize(text)
-        query_meaningful = _meaningful_tokens(text)
+        query_tokens = self._correct_tokens(_tokenize(text))
+        query_meaningful = {t for t in query_tokens if t not in _STOPWORDS}
         query_vector = self._vectorize(query_tokens)
+        # Phrase-bonus matching deliberately uses the ORIGINAL text, not
+        # the typo-corrected tokens -- it's checking for a literal,
+        # verbatim phrase match, which shouldn't be fooled by correction.
         query_lower = text.lower().strip()
 
         results = []

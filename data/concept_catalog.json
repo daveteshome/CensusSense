@@ -1,0 +1,3379 @@
+[
+  {
+    "concept": "b01001",
+    "label": "Sex By Age",
+    "aliases": [
+      "sex by age"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B01",
+        "column": "B01001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B01",
+        "column": "B01001e1"
+      }
+    }
+  },
+  {
+    "concept": "b01002",
+    "label": "Median Age",
+    "aliases": [
+      "median age",
+      "average age",
+      "age"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B01",
+        "column": "B01002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B01",
+        "column": "B01002e1"
+      }
+    }
+  },
+  {
+    "concept": "b01003",
+    "label": "Population",
+    "aliases": [
+      "population",
+      "total population",
+      "residents",
+      "people",
+      "how many people",
+      "number of people",
+      "inhabitants"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B01",
+        "column": "B01003e1"
+      },
+      "2020": {
+        "table": "2020_REDISTRICTING_CBG_DATA",
+        "column": "P0010001"
+      }
+    }
+  },
+  {
+    "concept": "b02001",
+    "label": "Race",
+    "aliases": [
+      "race",
+      "race breakdown"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B02",
+        "column": "B02001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B02",
+        "column": "B02001e1"
+      }
+    }
+  },
+  {
+    "concept": "b02008",
+    "label": "White Alone Or In Combination With One Or More Other Races",
+    "aliases": [
+      "white alone or in combination with one or more other races"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B02",
+        "column": "B02008e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B02",
+        "column": "B02008e1"
+      }
+    }
+  },
+  {
+    "concept": "b02009",
+    "label": "Black Or African American Alone Or In Combination With One Or More Other Races",
+    "aliases": [
+      "black or african american alone or in combination with one or more other races"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B02",
+        "column": "B02009e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B02",
+        "column": "B02009e1"
+      }
+    }
+  },
+  {
+    "concept": "b02010",
+    "label": "American Indian And Alaska Native Alone Or In Combination With One Or More Other Races",
+    "aliases": [
+      "american indian and alaska native alone or in combination with one or more other races"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B02",
+        "column": "B02010e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B02",
+        "column": "B02010e1"
+      }
+    }
+  },
+  {
+    "concept": "b02011",
+    "label": "Asian Alone Or In Combination With One Or More Other Races",
+    "aliases": [
+      "asian alone or in combination with one or more other races"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B02",
+        "column": "B02011e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B02",
+        "column": "B02011e1"
+      }
+    }
+  },
+  {
+    "concept": "b02012",
+    "label": "Native Hawaiian And Other Pacific Islander Alone Or In Combination With One Or More Other Races",
+    "aliases": [
+      "native hawaiian and other pacific islander alone or in combination with one or more other races"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B02",
+        "column": "B02012e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B02",
+        "column": "B02012e1"
+      }
+    }
+  },
+  {
+    "concept": "b02013",
+    "label": "Some Other Race Alone Or In Combination With One Or More Other Races",
+    "aliases": [
+      "some other race alone or in combination with one or more other races"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B02",
+        "column": "B02013e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B02",
+        "column": "B02013e1"
+      }
+    }
+  },
+  {
+    "concept": "b03002",
+    "label": "Hispanic Or Latino Origin By Race",
+    "aliases": [
+      "hispanic or latino origin by race"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B03",
+        "column": "B03002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B03",
+        "column": "B03002e1"
+      }
+    }
+  },
+  {
+    "concept": "b03003",
+    "label": "Hispanic or Latino Origin",
+    "aliases": [
+      "ethnicity",
+      "hispanic or latino origin",
+      "hispanic population"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B03",
+        "column": "B03003e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B03",
+        "column": "B03003e1"
+      }
+    }
+  },
+  {
+    "concept": "b07201",
+    "label": "Geographical Mobility In The Past Year For Current Residence--Metropolitan Statistical Area Level In The United States",
+    "aliases": [
+      "geographical mobility in the past year for current residence--metropolitan statistical area level in the united states"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B07",
+        "column": "B07201e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B07",
+        "column": "B07201e1"
+      }
+    }
+  },
+  {
+    "concept": "b07202",
+    "label": "Geographical Mobility In The Past Year For Current Residence--Micropolitan Statistical Area Level In The United States",
+    "aliases": [
+      "geographical mobility in the past year for current residence--micropolitan statistical area level in the united states"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B07",
+        "column": "B07202e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B07",
+        "column": "B07202e1"
+      }
+    }
+  },
+  {
+    "concept": "b07203",
+    "label": "Geographical Mobility In The Past Year For Current Residence--Not Metropolitan Or Micropolitan Statistical Area Level In The United States",
+    "aliases": [
+      "geographical mobility in the past year for current residence--not metropolitan or micropolitan statistical area level in the united states"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B07",
+        "column": "B07203e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B07",
+        "column": "B07203e1"
+      }
+    }
+  },
+  {
+    "concept": "b08007",
+    "label": "Sex Of Workers By Place Of Work--State And County Level",
+    "aliases": [
+      "sex of workers by place of work--state and county level"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08007e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08007e1"
+      }
+    }
+  },
+  {
+    "concept": "b08008",
+    "label": "Sex Of Workers By Place Of Work--Place Level",
+    "aliases": [
+      "sex of workers by place of work--place level"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08008e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08008e1"
+      }
+    }
+  },
+  {
+    "concept": "b08009",
+    "label": "Sex Of Workers By Place Of Work--Minor Civil Division Level For 12 Selected States (Ct, Me, Ma, Mi, Mn, Nh, Nj, Ny, Pa, Ri, Vt, Wi)",
+    "aliases": [
+      "sex of workers by place of work--minor civil division level for 12 selected states (ct, me, ma, mi, mn, nh, nj, ny, pa, ri, vt, wi)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08009e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08009e1"
+      }
+    }
+  },
+  {
+    "concept": "b08016",
+    "label": "Place Of Work For Workers 16 Years And Over--Metropolitan Statistical Area Level",
+    "aliases": [
+      "place of work for workers 16 years and over--metropolitan statistical area level"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08016e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08016e1"
+      }
+    }
+  },
+  {
+    "concept": "b08017",
+    "label": "Place Of Work For Workers 16 Years And Over--Micropolitan Statistical Area Level",
+    "aliases": [
+      "place of work for workers 16 years and over--micropolitan statistical area level"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08017e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08017e1"
+      }
+    }
+  },
+  {
+    "concept": "b08018",
+    "label": "Place Of Work For Workers 16 Years And Over--Not Metropolitan Or Micropolitan Statistical Area Level",
+    "aliases": [
+      "place of work for workers 16 years and over--not metropolitan or micropolitan statistical area level"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08018e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08018e1"
+      }
+    }
+  },
+  {
+    "concept": "b08134",
+    "label": "Means Of Transportation To Work By Travel Time To Work",
+    "aliases": [
+      "means of transportation to work by travel time to work"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08134e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08134e1"
+      }
+    }
+  },
+  {
+    "concept": "b08301",
+    "label": "Means Of Transportation To Work",
+    "aliases": [
+      "means of transportation to work"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08301e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08301e1"
+      }
+    }
+  },
+  {
+    "concept": "b08302",
+    "label": "Time Of Departure To Go To Work",
+    "aliases": [
+      "time of departure to go to work"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08302e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08302e1"
+      }
+    }
+  },
+  {
+    "concept": "b08303",
+    "label": "Travel Time To Work",
+    "aliases": [
+      "travel time to work"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B08",
+        "column": "B08303e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B08",
+        "column": "B08303e1"
+      }
+    }
+  },
+  {
+    "concept": "b09002",
+    "label": "Own Children Under 18 Years By Family Type And Age",
+    "aliases": [
+      "own children under 18 years by family type and age"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B09",
+        "column": "B09002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B09",
+        "column": "B09002e1"
+      }
+    }
+  },
+  {
+    "concept": "b09018",
+    "label": "Relationship To Householder For Children Under 18 Years In Households",
+    "aliases": [
+      "relationship to householder for children under 18 years in households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B09",
+        "column": "B09018e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B09",
+        "column": "B09018e1"
+      }
+    }
+  },
+  {
+    "concept": "b09019",
+    "label": "Household Type (Including Living Alone) By Relationship",
+    "aliases": [
+      "household type (including living alone) by relationship"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B09",
+        "column": "B09019e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B09",
+        "column": "B09019e1"
+      }
+    }
+  },
+  {
+    "concept": "b09020",
+    "label": "Relationship By Household Type (Including Living Alone) For The Population 65 Years And Over",
+    "aliases": [
+      "relationship by household type (including living alone) for the population 65 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B09",
+        "column": "B09020e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B09",
+        "column": "B09020e1"
+      }
+    }
+  },
+  {
+    "concept": "b09021",
+    "label": "Living Arrangements Of Adults 18 Years And Over By Age",
+    "aliases": [
+      "living arrangements of adults 18 years and over by age"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B09",
+        "column": "B09021e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B09",
+        "column": "B09021e1"
+      }
+    }
+  },
+  {
+    "concept": "b11001",
+    "label": "Households",
+    "aliases": [
+      "households",
+      "number of households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11001e1"
+      }
+    }
+  },
+  {
+    "concept": "b11002",
+    "label": "Household Type By Relatives And Nonrelatives For Population In Households",
+    "aliases": [
+      "household type by relatives and nonrelatives for population in households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11002e1"
+      }
+    }
+  },
+  {
+    "concept": "b11003",
+    "label": "Family Type By Presence And Age Of Own Children Under 18 Years",
+    "aliases": [
+      "family type by presence and age of own children under 18 years"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11003e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11003e1"
+      }
+    }
+  },
+  {
+    "concept": "b11004",
+    "label": "Family Type By Presence And Age Of Related Children Under 18 Years",
+    "aliases": [
+      "family type by presence and age of related children under 18 years"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11004e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11004e1"
+      }
+    }
+  },
+  {
+    "concept": "b11005",
+    "label": "Households By Presence Of People Under 18 Years By Household Type",
+    "aliases": [
+      "households by presence of people under 18 years by household type"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11005e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11005e1"
+      }
+    }
+  },
+  {
+    "concept": "b11006",
+    "label": "Households By Presence Of People 60 Years And Over By Household Type",
+    "aliases": [
+      "households by presence of people 60 years and over by household type"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11006e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11006e1"
+      }
+    }
+  },
+  {
+    "concept": "b11007",
+    "label": "Households By Presence Of People 65 Years And Over, Household Size And Household Type",
+    "aliases": [
+      "households by presence of people 65 years and over, household size and household type"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11007e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11007e1"
+      }
+    }
+  },
+  {
+    "concept": "b11008",
+    "label": "Cohabiting Couple Households By Presence And Age Of Own Children Under 18 Years",
+    "aliases": [
+      "cohabiting couple households by presence and age of own children under 18 years"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11008e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11008e1"
+      }
+    }
+  },
+  {
+    "concept": "b11012",
+    "label": "Households By Type",
+    "aliases": [
+      "households by type"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11012e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11012e1"
+      }
+    }
+  },
+  {
+    "concept": "b11015",
+    "label": "Households By Presence Of Nonrelatives",
+    "aliases": [
+      "households by presence of nonrelatives"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11015e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11015e1"
+      }
+    }
+  },
+  {
+    "concept": "b11016",
+    "label": "Household Type By Household Size",
+    "aliases": [
+      "household type by household size"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B11",
+        "column": "B11016e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B11",
+        "column": "B11016e1"
+      }
+    }
+  },
+  {
+    "concept": "b12001",
+    "label": "Sex By Marital Status For The Population 15 Years And Over",
+    "aliases": [
+      "sex by marital status for the population 15 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B12",
+        "column": "B12001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B12",
+        "column": "B12001e1"
+      }
+    }
+  },
+  {
+    "concept": "b14002",
+    "label": "Sex By School Enrollment By Level Of School By Type Of School For The Population 3 Years And Over",
+    "aliases": [
+      "sex by school enrollment by level of school by type of school for the population 3 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B14",
+        "column": "B14002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B14",
+        "column": "B14002e1"
+      }
+    }
+  },
+  {
+    "concept": "b14005",
+    "label": "Sex By School Enrollment By Educational Attainment By Employment Status For The Population 16 To 19 Years",
+    "aliases": [
+      "sex by school enrollment by educational attainment by employment status for the population 16 to 19 years"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B14",
+        "column": "B14005e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B14",
+        "column": "B14005e1"
+      }
+    }
+  },
+  {
+    "concept": "b14007",
+    "label": "School Enrollment By Detailed  Level Of School For The Population 3 Years And Over",
+    "aliases": [
+      "school enrollment by detailed  level of school for the population 3 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B14",
+        "column": "B14007e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B14",
+        "column": "B14007e1"
+      }
+    }
+  },
+  {
+    "concept": "b15002",
+    "label": "Sex By Educational Attainment For The Population 25 Years And Over",
+    "aliases": [
+      "sex by educational attainment for the population 25 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B15",
+        "column": "B15002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B15",
+        "column": "B15002e1"
+      }
+    }
+  },
+  {
+    "concept": "b15003",
+    "label": "Educational Attainment",
+    "aliases": [
+      "education",
+      "educational attainment",
+      "degrees"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B15",
+        "column": "B15003e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B15",
+        "column": "B15003e1"
+      }
+    }
+  },
+  {
+    "concept": "b15011",
+    "label": "Sex By Age By Field Of Bachelor's Degree For First Major For The Population 25 Years And Over",
+    "aliases": [
+      "sex by age by field of bachelor's degree for first major for the population 25 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B15",
+        "column": "B15011e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B15",
+        "column": "B15011e1"
+      }
+    }
+  },
+  {
+    "concept": "b15012",
+    "label": "Total Fields Of Bachelor's Degrees Reported",
+    "aliases": [
+      "total fields of bachelor's degrees reported"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B15",
+        "column": "B15012e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B15",
+        "column": "B15012e1"
+      }
+    }
+  },
+  {
+    "concept": "b16004",
+    "label": "Age By Language Spoken At Home By Ability To Speak English For The Population 5 Years And Over",
+    "aliases": [
+      "age by language spoken at home by ability to speak english for the population 5 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B16",
+        "column": "B16004e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B16",
+        "column": "B16004e1"
+      }
+    }
+  },
+  {
+    "concept": "b17010",
+    "label": "Poverty Status In The Past 12 Months Of Families By Family Type By Presence Of Related Children Under 18 Years By Age Of Related Children",
+    "aliases": [
+      "poverty status in the past 12 months of families by family type by presence of related children under 18 years by age of related children"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B17",
+        "column": "B17010e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B17",
+        "column": "B17010e1"
+      }
+    }
+  },
+  {
+    "concept": "b17017",
+    "label": "Poverty Status In The Past 12 Months By Household Type By Age Of Householder",
+    "aliases": [
+      "poverty status in the past 12 months by household type by age of householder"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B17",
+        "column": "B17017e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B17",
+        "column": "B17017e1"
+      }
+    }
+  },
+  {
+    "concept": "b17021",
+    "label": "Poverty Status",
+    "aliases": [
+      "poverty",
+      "people in poverty",
+      "poverty rate",
+      "poverty status"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B17",
+        "column": "B17021e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B17",
+        "column": "B17021e1"
+      }
+    }
+  },
+  {
+    "concept": "b19001",
+    "label": "Household Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "household income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19001e1"
+      }
+    }
+  },
+  {
+    "concept": "b19013",
+    "label": "Median Household Income",
+    "aliases": [
+      "median household income",
+      "household income",
+      "income"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19013e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19013e1"
+      }
+    }
+  },
+  {
+    "concept": "b19025",
+    "label": "Aggregate Household Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "aggregate household income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19025e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19025e1"
+      }
+    }
+  },
+  {
+    "concept": "b19037",
+    "label": "Age Of Householder By Household Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "age of householder by household income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19037e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19037e1"
+      }
+    }
+  },
+  {
+    "concept": "b19049",
+    "label": "Median Household Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) By Age Of Householder: Median household income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "median household income in the past 12 months (in 2019 inflation-adjusted dollars) by age of householder: median household income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19049e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19049e1"
+      }
+    }
+  },
+  {
+    "concept": "b19051",
+    "label": "Earnings In The Past 12 Months For Households",
+    "aliases": [
+      "earnings in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19051e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19051e1"
+      }
+    }
+  },
+  {
+    "concept": "b19052",
+    "label": "Wage Or Salary Income In The Past 12 Months For Households",
+    "aliases": [
+      "wage or salary income in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19052e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19052e1"
+      }
+    }
+  },
+  {
+    "concept": "b19053",
+    "label": "Self-Employment Income In The Past 12 Months For Households",
+    "aliases": [
+      "self-employment income in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19053e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19053e1"
+      }
+    }
+  },
+  {
+    "concept": "b19054",
+    "label": "Interest, Dividends, Or Net Rental Income In The Past 12 Months For Households",
+    "aliases": [
+      "interest, dividends, or net rental income in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19054e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19054e1"
+      }
+    }
+  },
+  {
+    "concept": "b19055",
+    "label": "Social Security Income In The Past 12 Months For Households",
+    "aliases": [
+      "social security income in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19055e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19055e1"
+      }
+    }
+  },
+  {
+    "concept": "b19056",
+    "label": "Supplemental Security Income (Ssi) In The Past 12 Months For Households",
+    "aliases": [
+      "supplemental security income (ssi) in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19056e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19056e1"
+      }
+    }
+  },
+  {
+    "concept": "b19057",
+    "label": "Public Assistance Income In The Past 12 Months For Households",
+    "aliases": [
+      "public assistance income in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19057e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19057e1"
+      }
+    }
+  },
+  {
+    "concept": "b19058",
+    "label": "Public Assistance Income Or Food Stamps/Snap In The Past 12 Months For Households",
+    "aliases": [
+      "public assistance income or food stamps/snap in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19058e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19058e1"
+      }
+    }
+  },
+  {
+    "concept": "b19059",
+    "label": "Retirement Income In The Past 12 Months For Households",
+    "aliases": [
+      "retirement income in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19059e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19059e1"
+      }
+    }
+  },
+  {
+    "concept": "b19060",
+    "label": "Other Types Of Income In The Past 12 Months For Households",
+    "aliases": [
+      "other types of income in the past 12 months for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19060e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19060e1"
+      }
+    }
+  },
+  {
+    "concept": "b19061",
+    "label": "Aggregate Earnings In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate earnings in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate earnings in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate earnings in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19061e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19061e1"
+      }
+    }
+  },
+  {
+    "concept": "b19062",
+    "label": "Aggregate Wage Or Salary Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate wage or salary income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate wage or salary income in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate wage or salary income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19062e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19062e1"
+      }
+    }
+  },
+  {
+    "concept": "b19063",
+    "label": "Aggregate Self-Employment Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate self-employment income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate self-employment income in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate self-employment income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19063e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19063e1"
+      }
+    }
+  },
+  {
+    "concept": "b19064",
+    "label": "Aggregate Interest, Dividends, Or Net Rental Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate interest dividends or net rental income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate interest, dividends, or net rental income in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate interest dividends or net rental income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19064e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19064e1"
+      }
+    }
+  },
+  {
+    "concept": "b19065",
+    "label": "Aggregate Social Security Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate Social Security income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate social security income in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate social security income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19065e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19065e1"
+      }
+    }
+  },
+  {
+    "concept": "b19066",
+    "label": "Aggregate Supplemental Security Income (Ssi) In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate Supplemental Security Income (SSI) in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate supplemental security income (ssi) in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate supplemental security income (ssi) in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19066e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19066e1"
+      }
+    }
+  },
+  {
+    "concept": "b19067",
+    "label": "Aggregate Public Assistance Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate public assistance income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate public assistance income in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate public assistance income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19067e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19067e1"
+      }
+    }
+  },
+  {
+    "concept": "b19069",
+    "label": "Aggregate Retirement Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate retirement income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate retirement income in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate retirement income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19069e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19069e1"
+      }
+    }
+  },
+  {
+    "concept": "b19070",
+    "label": "Aggregate Other Types Of Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For Households: Aggregate other types of income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "aggregate other types of income in the past 12 months (in 2019 inflation-adjusted dollars) for households: aggregate other types of income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19070e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19070e1"
+      }
+    }
+  },
+  {
+    "concept": "b19101",
+    "label": "Family Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "family income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19101e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19101e1"
+      }
+    }
+  },
+  {
+    "concept": "b19113",
+    "label": "Median Family Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "median family income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19113e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19113e1"
+      }
+    }
+  },
+  {
+    "concept": "b19123",
+    "label": "Family Size By Cash Public Assistance Income Or Households Receiving Food Stamps/Snap Benefits In The Past 12 Months",
+    "aliases": [
+      "family size by cash public assistance income or households receiving food stamps/snap benefits in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19123e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19123e1"
+      }
+    }
+  },
+  {
+    "concept": "b19127",
+    "label": "Aggregate Family Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "aggregate family income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19127e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19127e1"
+      }
+    }
+  },
+  {
+    "concept": "b19201",
+    "label": "Nonfamily Household Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "nonfamily household income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19201e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19201e1"
+      }
+    }
+  },
+  {
+    "concept": "b19202",
+    "label": "Median Nonfamily Household Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "median nonfamily household income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19202e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19202e1"
+      }
+    }
+  },
+  {
+    "concept": "b19214",
+    "label": "Aggregate Nonfamily Household Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "aggregate nonfamily household income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19214e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19214e1"
+      }
+    }
+  },
+  {
+    "concept": "b19301",
+    "label": "Per Capita Income",
+    "aliases": [
+      "per capita income",
+      "average income per person"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19301e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19301e1"
+      }
+    }
+  },
+  {
+    "concept": "b19313",
+    "label": "Aggregate Income In The Past 12 Months (In 2019 Inflation-Adjusted Dollars)",
+    "aliases": [
+      "aggregate income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B19",
+        "column": "B19313e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B19",
+        "column": "B19313e1"
+      }
+    }
+  },
+  {
+    "concept": "b20001",
+    "label": "Sex By Earnings In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) For The Population 16 Years And Over With Earnings In The Past 12 Months",
+    "aliases": [
+      "sex by earnings in the past 12 months (in 2019 inflation-adjusted dollars) for the population 16 years and over with earnings in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B20",
+        "column": "B20001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B20",
+        "column": "B20001e1"
+      }
+    }
+  },
+  {
+    "concept": "b20002",
+    "label": "Median Earnings In The Past 12 Months (In 2019 Inflation-Adjusted Dollars) By Sex For The Population 16 Years And Over With Earnings In The Past 12 Months: Median earnings in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "median earnings in the past 12 months (in 2019 inflation-adjusted dollars) by sex for the population 16 years and over with earnings in the past 12 months: median earnings in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B20",
+        "column": "B20002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B20",
+        "column": "B20002e1"
+      }
+    }
+  },
+  {
+    "concept": "b21001",
+    "label": "Veteran Status",
+    "aliases": [
+      "veterans",
+      "veteran population"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B21",
+        "column": "B21001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B21",
+        "column": "B21001e1"
+      }
+    }
+  },
+  {
+    "concept": "b21002",
+    "label": "Period Of Military Service For Civilian Veterans 18 Years And Over",
+    "aliases": [
+      "period of military service for civilian veterans 18 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B21",
+        "column": "B21002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B21",
+        "column": "B21002e1"
+      }
+    }
+  },
+  {
+    "concept": "b22010",
+    "label": "Receipt Of Food Stamps/Snap In The Past 12 Months By Disability Status For Households",
+    "aliases": [
+      "receipt of food stamps/snap in the past 12 months by disability status for households"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B22",
+        "column": "B22010e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B22",
+        "column": "B22010e1"
+      }
+    }
+  },
+  {
+    "concept": "b23003",
+    "label": "Presence Of Own Children Under 18 Years By Age Of Own Children Under 18 Years By Employment Status For Females 20 To 64 Years",
+    "aliases": [
+      "presence of own children under 18 years by age of own children under 18 years by employment status for females 20 to 64 years"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23003e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23003e1"
+      }
+    }
+  },
+  {
+    "concept": "b23007",
+    "label": "Presence Of Own Children Under 18 Years By Family Type By Employment Status",
+    "aliases": [
+      "presence of own children under 18 years by family type by employment status"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23007e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23007e1"
+      }
+    }
+  },
+  {
+    "concept": "b23008",
+    "label": "Age Of Own Children Under 18 Years In Families And Subfamilies By Living Arrangements By Employment Status Of Parents",
+    "aliases": [
+      "age of own children under 18 years in families and subfamilies by living arrangements by employment status of parents"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23008e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23008e1"
+      }
+    }
+  },
+  {
+    "concept": "b23009",
+    "label": "Presence Of Own Children Under 18 Years By Family Type By Number Of Workers In Family In The Past 12 Months",
+    "aliases": [
+      "presence of own children under 18 years by family type by number of workers in family in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23009e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23009e1"
+      }
+    }
+  },
+  {
+    "concept": "b23022",
+    "label": "Sex By Work Status In The Past 12 Months By Usual Hours Worked Per Week In The Past 12 Months By Weeks Worked In The Past 12 Months For The Population 16 To 64 Years",
+    "aliases": [
+      "sex by work status in the past 12 months by usual hours worked per week in the past 12 months by weeks worked in the past 12 months for the population 16 to 64 years"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23022e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23022e1"
+      }
+    }
+  },
+  {
+    "concept": "b23024",
+    "label": "Poverty Status In The Past 12 Months By Disability Status By Employment Status For The Population 20 To 64 Years",
+    "aliases": [
+      "poverty status in the past 12 months by disability status by employment status for the population 20 to 64 years"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23024e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23024e1"
+      }
+    }
+  },
+  {
+    "concept": "b23025",
+    "label": "Employment Status",
+    "aliases": [
+      "employment",
+      "unemployment",
+      "labor force",
+      "jobs"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23025e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23025e1"
+      }
+    }
+  },
+  {
+    "concept": "b23026",
+    "label": "Sex By Work Status In The Past 12 Months By Usual Hours Worked Per Week In The Past 12 Months By Weeks Worked In The Past 12 Months For The Population 65 Years And Over",
+    "aliases": [
+      "sex by work status in the past 12 months by usual hours worked per week in the past 12 months by weeks worked in the past 12 months for the population 65 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23026e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23026e1"
+      }
+    }
+  },
+  {
+    "concept": "b23027",
+    "label": "Full-Time, Year-Round Work Status In The Past 12 Months By Age For The Population 16 Years And Over",
+    "aliases": [
+      "full-time, year-round work status in the past 12 months by age for the population 16 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B23",
+        "column": "B23027e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B23",
+        "column": "B23027e1"
+      }
+    }
+  },
+  {
+    "concept": "b24080",
+    "label": "Sex By Class Of Worker For The Civilian Employed Population 16 Years And Over",
+    "aliases": [
+      "sex by class of worker for the civilian employed population 16 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B24",
+        "column": "B24080e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B24",
+        "column": "B24080e1"
+      }
+    }
+  },
+  {
+    "concept": "b25001",
+    "label": "Housing Units",
+    "aliases": [
+      "housing units",
+      "number of houses",
+      "homes"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25001e1"
+      }
+    }
+  },
+  {
+    "concept": "b25002",
+    "label": "Occupancy Status",
+    "aliases": [
+      "occupancy status"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25002e1"
+      }
+    }
+  },
+  {
+    "concept": "b25003",
+    "label": "Tenure",
+    "aliases": [
+      "tenure"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25003e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25003e1"
+      }
+    }
+  },
+  {
+    "concept": "b25004",
+    "label": "Vacancy Status",
+    "aliases": [
+      "vacancy status"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25004e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25004e1"
+      }
+    }
+  },
+  {
+    "concept": "b25006",
+    "label": "Race Of Householder",
+    "aliases": [
+      "race of householder"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25006e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25006e1"
+      }
+    }
+  },
+  {
+    "concept": "b25007",
+    "label": "Tenure By Age Of Householder",
+    "aliases": [
+      "tenure by age of householder"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25007e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25007e1"
+      }
+    }
+  },
+  {
+    "concept": "b25008",
+    "label": "Total Population In Occupied Housing Units By Tenure",
+    "aliases": [
+      "total population in occupied housing units by tenure"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25008e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25008e1"
+      }
+    }
+  },
+  {
+    "concept": "b25009",
+    "label": "Tenure By Household Size",
+    "aliases": [
+      "tenure by household size"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25009e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25009e1"
+      }
+    }
+  },
+  {
+    "concept": "b25010",
+    "label": "Average Household Size Of Occupied Housing Units By Tenure: Average household size",
+    "aliases": [
+      "average household size of occupied housing units by tenure: average household size"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25010e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25010e1"
+      }
+    }
+  },
+  {
+    "concept": "b25014",
+    "label": "Tenure By Occupants Per Room",
+    "aliases": [
+      "tenure by occupants per room"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25014e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25014e1"
+      }
+    }
+  },
+  {
+    "concept": "b25015",
+    "label": "Tenure By Age Of Householder By Occupants Per Room",
+    "aliases": [
+      "tenure by age of householder by occupants per room"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25015e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25015e1"
+      }
+    }
+  },
+  {
+    "concept": "b25016",
+    "label": "Tenure By Plumbing Facilities By Occupants Per Room",
+    "aliases": [
+      "tenure by plumbing facilities by occupants per room"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25016e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25016e1"
+      }
+    }
+  },
+  {
+    "concept": "b25017",
+    "label": "Rooms",
+    "aliases": [
+      "rooms"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25017e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25017e1"
+      }
+    }
+  },
+  {
+    "concept": "b25018",
+    "label": "Median Number Of Rooms",
+    "aliases": [
+      "median number of rooms"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25018e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25018e1"
+      }
+    }
+  },
+  {
+    "concept": "b25019",
+    "label": "Aggregate Number Of Rooms",
+    "aliases": [
+      "aggregate number of rooms"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25019e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25019e1"
+      }
+    }
+  },
+  {
+    "concept": "b25020",
+    "label": "Tenure By Rooms",
+    "aliases": [
+      "tenure by rooms"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25020e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25020e1"
+      }
+    }
+  },
+  {
+    "concept": "b25021",
+    "label": "Median Number Of Rooms By Tenure: Median number of rooms",
+    "aliases": [
+      "median number of rooms by tenure: median number of rooms"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25021e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25021e1"
+      }
+    }
+  },
+  {
+    "concept": "b25024",
+    "label": "Units In Structure",
+    "aliases": [
+      "units in structure"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25024e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25024e1"
+      }
+    }
+  },
+  {
+    "concept": "b25032",
+    "label": "Tenure By Units In Structure",
+    "aliases": [
+      "tenure by units in structure"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25032e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25032e1"
+      }
+    }
+  },
+  {
+    "concept": "b25033",
+    "label": "Total Population In Occupied Housing Units By Tenure By Units In Structure",
+    "aliases": [
+      "total population in occupied housing units by tenure by units in structure"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25033e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25033e1"
+      }
+    }
+  },
+  {
+    "concept": "b25034",
+    "label": "Year Structure Built",
+    "aliases": [
+      "year structure built"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25034e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25034e1"
+      }
+    }
+  },
+  {
+    "concept": "b25035",
+    "label": "Median Year Structure Built",
+    "aliases": [
+      "median year structure built"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25035e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25035e1"
+      }
+    }
+  },
+  {
+    "concept": "b25036",
+    "label": "Tenure By Year Structure Built",
+    "aliases": [
+      "tenure by year structure built"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25036e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25036e1"
+      }
+    }
+  },
+  {
+    "concept": "b25037",
+    "label": "Median Year Structure Built By Tenure: Median year structure built",
+    "aliases": [
+      "median year structure built by tenure: median year structure built"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25037e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25037e1"
+      }
+    }
+  },
+  {
+    "concept": "b25038",
+    "label": "Tenure By Year Householder Moved Into Unit",
+    "aliases": [
+      "tenure by year householder moved into unit"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25038e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25038e1"
+      }
+    }
+  },
+  {
+    "concept": "b25039",
+    "label": "Median Year Householder Moved Into Unit By Tenure: Median year householder moved into unit",
+    "aliases": [
+      "median year householder moved into unit by tenure: median year householder moved into unit"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25039e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25039e1"
+      }
+    }
+  },
+  {
+    "concept": "b25040",
+    "label": "House Heating Fuel",
+    "aliases": [
+      "house heating fuel"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25040e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25040e1"
+      }
+    }
+  },
+  {
+    "concept": "b25041",
+    "label": "Bedrooms",
+    "aliases": [
+      "bedrooms"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25041e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25041e1"
+      }
+    }
+  },
+  {
+    "concept": "b25042",
+    "label": "Tenure By Bedrooms",
+    "aliases": [
+      "tenure by bedrooms"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25042e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25042e1"
+      }
+    }
+  },
+  {
+    "concept": "b25043",
+    "label": "Tenure By Telephone Service Available By Age Of Householder",
+    "aliases": [
+      "tenure by telephone service available by age of householder"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25043e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25043e1"
+      }
+    }
+  },
+  {
+    "concept": "b25044",
+    "label": "Tenure By Vehicles Available",
+    "aliases": [
+      "tenure by vehicles available"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25044e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25044e1"
+      }
+    }
+  },
+  {
+    "concept": "b25045",
+    "label": "Tenure By Vehicles Available By Age Of Householder",
+    "aliases": [
+      "tenure by vehicles available by age of householder"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25045e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25045e1"
+      }
+    }
+  },
+  {
+    "concept": "b25047",
+    "label": "Plumbing Facilities For All Housing Units",
+    "aliases": [
+      "plumbing facilities for all housing units"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25047e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25047e1"
+      }
+    }
+  },
+  {
+    "concept": "b25049",
+    "label": "Tenure By Plumbing Facilities",
+    "aliases": [
+      "tenure by plumbing facilities"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25049e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25049e1"
+      }
+    }
+  },
+  {
+    "concept": "b25050",
+    "label": "Plumbing Facilities By Occupants Per Room By Year Structure Built",
+    "aliases": [
+      "plumbing facilities by occupants per room by year structure built"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25050e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25050e1"
+      }
+    }
+  },
+  {
+    "concept": "b25051",
+    "label": "Kitchen Facilities For All Housing Units",
+    "aliases": [
+      "kitchen facilities for all housing units"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25051e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25051e1"
+      }
+    }
+  },
+  {
+    "concept": "b25053",
+    "label": "Tenure By Kitchen Facilities",
+    "aliases": [
+      "tenure by kitchen facilities"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25053e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25053e1"
+      }
+    }
+  },
+  {
+    "concept": "b25054",
+    "label": "Kitchen Facilities By Meals Included In Rent",
+    "aliases": [
+      "kitchen facilities by meals included in rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25054e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25054e1"
+      }
+    }
+  },
+  {
+    "concept": "b25055",
+    "label": "Age Of Householder By Meals Included In Rent",
+    "aliases": [
+      "age of householder by meals included in rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25055e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25055e1"
+      }
+    }
+  },
+  {
+    "concept": "b25056",
+    "label": "Contract Rent",
+    "aliases": [
+      "contract rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25056e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25056e1"
+      }
+    }
+  },
+  {
+    "concept": "b25057",
+    "label": "Lower Contract Rent Quartile (Dollars): Lower contract rent quartile",
+    "aliases": [
+      "lower contract rent quartile (dollars): lower contract rent quartile"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25057e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25057e1"
+      }
+    }
+  },
+  {
+    "concept": "b25058",
+    "label": "Median Contract Rent (Dollars): Median contract rent",
+    "aliases": [
+      "median contract rent (dollars): median contract rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25058e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25058e1"
+      }
+    }
+  },
+  {
+    "concept": "b25059",
+    "label": "Upper Contract Rent Quartile (Dollars): Upper contract rent quartile",
+    "aliases": [
+      "upper contract rent quartile (dollars): upper contract rent quartile"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25059e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25059e1"
+      }
+    }
+  },
+  {
+    "concept": "b25060",
+    "label": "Aggregate Contract Rent (Dollars): Aggregate contract rent",
+    "aliases": [
+      "aggregate contract rent (dollars): aggregate contract rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25060e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25060e1"
+      }
+    }
+  },
+  {
+    "concept": "b25061",
+    "label": "Rent Asked",
+    "aliases": [
+      "rent asked"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25061e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25061e1"
+      }
+    }
+  },
+  {
+    "concept": "b25062",
+    "label": "Aggregate Rent Asked (Dollars): Aggregate rent asked",
+    "aliases": [
+      "aggregate rent asked (dollars): aggregate rent asked"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25062e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25062e1"
+      }
+    }
+  },
+  {
+    "concept": "b25063",
+    "label": "Gross Rent",
+    "aliases": [
+      "gross rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25063e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25063e1"
+      }
+    }
+  },
+  {
+    "concept": "b25064",
+    "label": "Median Gross Rent",
+    "aliases": [
+      "median gross rent",
+      "rent",
+      "average rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25064e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25064e1"
+      }
+    }
+  },
+  {
+    "concept": "b25065",
+    "label": "Aggregate Gross Rent (Dollars): Aggregate gross rent",
+    "aliases": [
+      "aggregate gross rent (dollars): aggregate gross rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25065e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25065e1"
+      }
+    }
+  },
+  {
+    "concept": "b25068",
+    "label": "Bedrooms By Gross Rent",
+    "aliases": [
+      "bedrooms by gross rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25068e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25068e1"
+      }
+    }
+  },
+  {
+    "concept": "b25069",
+    "label": "Inclusion Of Utilities In Rent",
+    "aliases": [
+      "inclusion of utilities in rent"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25069e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25069e1"
+      }
+    }
+  },
+  {
+    "concept": "b25070",
+    "label": "Gross Rent As A Percentage Of Household Income In The Past 12 Months",
+    "aliases": [
+      "gross rent as a percentage of household income in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25070e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25070e1"
+      }
+    }
+  },
+  {
+    "concept": "b25071",
+    "label": "Median Gross Rent As A Percentage Of Household Income In The Past 12 Months (Dollars): Median gross rent as a percentage of household income",
+    "aliases": [
+      "median gross rent as a percentage of household income in the past 12 months (dollars): median gross rent as a percentage of household income"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25071e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25071e1"
+      }
+    }
+  },
+  {
+    "concept": "b25072",
+    "label": "Age Of Householder By Gross Rent As A Percentage Of Household Income In The Past 12 Months",
+    "aliases": [
+      "age of householder by gross rent as a percentage of household income in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25072e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25072e1"
+      }
+    }
+  },
+  {
+    "concept": "b25074",
+    "label": "Household Income By Gross Rent As A Percentage Of Household Income In The Past 12 Months",
+    "aliases": [
+      "household income by gross rent as a percentage of household income in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25074e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25074e1"
+      }
+    }
+  },
+  {
+    "concept": "b25075",
+    "label": "Value",
+    "aliases": [
+      "value"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25075e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25075e1"
+      }
+    }
+  },
+  {
+    "concept": "b25076",
+    "label": "Lower Value Quartile (Dollars)",
+    "aliases": [
+      "lower value quartile (dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25076e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25076e1"
+      }
+    }
+  },
+  {
+    "concept": "b25077",
+    "label": "Median Home Value",
+    "aliases": [
+      "median home value",
+      "home value",
+      "house prices",
+      "home prices"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25077e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25077e1"
+      }
+    }
+  },
+  {
+    "concept": "b25078",
+    "label": "Upper Value Quartile (Dollars)",
+    "aliases": [
+      "upper value quartile (dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25078e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25078e1"
+      }
+    }
+  },
+  {
+    "concept": "b25081",
+    "label": "Mortgage Status",
+    "aliases": [
+      "mortgage status"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25081e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25081e1"
+      }
+    }
+  },
+  {
+    "concept": "b25083",
+    "label": "Median Value (Dollars) For Mobile Homes: Median value (dollars)",
+    "aliases": [
+      "median value (dollars) for mobile homes: median value (dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25083e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25083e1"
+      }
+    }
+  },
+  {
+    "concept": "b25085",
+    "label": "Price Asked",
+    "aliases": [
+      "price asked"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25085e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25085e1"
+      }
+    }
+  },
+  {
+    "concept": "b25086",
+    "label": "Aggregate Price Asked (Dollars)",
+    "aliases": [
+      "aggregate price asked (dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25086e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25086e1"
+      }
+    }
+  },
+  {
+    "concept": "b25087",
+    "label": "Mortgage Status And Selected Monthly Owner Costs",
+    "aliases": [
+      "mortgage status and selected monthly owner costs"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25087e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25087e1"
+      }
+    }
+  },
+  {
+    "concept": "b25088",
+    "label": "Median Selected Monthly Owner Costs (Dollars) By Mortgage Status: Median selected monthly owner costs (dollars)",
+    "aliases": [
+      "median selected monthly owner costs (dollars) by mortgage status: median selected monthly owner costs (dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25088e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25088e1"
+      }
+    }
+  },
+  {
+    "concept": "b25091",
+    "label": "Mortgage Status By Selected Monthly Owner Costs As A Percentage Of Household Income In The Past 12 Months",
+    "aliases": [
+      "mortgage status by selected monthly owner costs as a percentage of household income in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25091e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25091e1"
+      }
+    }
+  },
+  {
+    "concept": "b25092",
+    "label": "Median Selected Monthly Owner Costs As A Percentage Of Household Income In The Past 12 Months",
+    "aliases": [
+      "median selected monthly owner costs as a percentage of household income in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25092e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25092e1"
+      }
+    }
+  },
+  {
+    "concept": "b25093",
+    "label": "Age Of Householder By Selected Monthly Owner Costs As A Percentage Of Household Income In The Past 12 Months",
+    "aliases": [
+      "age of householder by selected monthly owner costs as a percentage of household income in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B25",
+        "column": "B25093e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B25",
+        "column": "B25093e1"
+      }
+    }
+  },
+  {
+    "concept": "b27010",
+    "label": "Health Insurance Coverage",
+    "aliases": [
+      "health insurance",
+      "insurance coverage",
+      "health insurance coverage"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B27",
+        "column": "B27010e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B27",
+        "column": "B27010e1"
+      }
+    }
+  },
+  {
+    "concept": "b28001",
+    "label": "Types Of Computers In Household",
+    "aliases": [
+      "types of computers in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28001e1"
+      }
+    }
+  },
+  {
+    "concept": "b28002",
+    "label": "Presence And Types Of Internet Subscriptions In Household",
+    "aliases": [
+      "presence and types of internet subscriptions in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28002e1"
+      }
+    }
+  },
+  {
+    "concept": "b28003",
+    "label": "Presence Of A Computer And Type Of Internet Subscription In Household",
+    "aliases": [
+      "presence of a computer and type of internet subscription in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28003e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28003e1"
+      }
+    }
+  },
+  {
+    "concept": "b28004",
+    "label": "Household Income In The Last 12 Months (In 2019 Inflation-Adjusted Dollars) By Presence And Type Of Internet Subscription In Household",
+    "aliases": [
+      "household income in the last 12 months (in 2019 inflation-adjusted dollars) by presence and type of internet subscription in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28004e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28004e1"
+      }
+    }
+  },
+  {
+    "concept": "b28005",
+    "label": "Age By Presence Of A Computer And Types Of Internet Subscription In Household",
+    "aliases": [
+      "age by presence of a computer and types of internet subscription in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28005e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28005e1"
+      }
+    }
+  },
+  {
+    "concept": "b28006",
+    "label": "Educational Attainment By Presence Of A Computer And Types Of Internet Subscription In Household",
+    "aliases": [
+      "educational attainment by presence of a computer and types of internet subscription in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28006e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28006e1"
+      }
+    }
+  },
+  {
+    "concept": "b28007",
+    "label": "Labor Force Status By Presence Of A Computer And Types Of Internet Subscription In Household",
+    "aliases": [
+      "labor force status by presence of a computer and types of internet subscription in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28007e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28007e1"
+      }
+    }
+  },
+  {
+    "concept": "b28008",
+    "label": "Presence Of A Computer And Type Of Internet Subscription In Household",
+    "aliases": [
+      "presence of a computer and type of internet subscription in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28008e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28008e1"
+      }
+    }
+  },
+  {
+    "concept": "b28010",
+    "label": "Computers In Household",
+    "aliases": [
+      "computers in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28010e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28010e1"
+      }
+    }
+  },
+  {
+    "concept": "b28011",
+    "label": "Internet Subscriptions In Household",
+    "aliases": [
+      "internet subscriptions in household"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B28",
+        "column": "B28011e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28011e1"
+      }
+    }
+  },
+  {
+    "concept": "b28012",
+    "label": "Age And Enrollment Status By Computer Ownership And Internet Subscription Status",
+    "aliases": [
+      "age and enrollment status by computer ownership and internet subscription status"
+    ],
+    "sources": {
+      "2020": {
+        "table": "2020_CBG_B28",
+        "column": "B28012e1"
+      }
+    }
+  },
+  {
+    "concept": "b29001",
+    "label": "Citizen, Voting-Age Population By Age",
+    "aliases": [
+      "citizen, voting-age population by age"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B29",
+        "column": "B29001e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B29",
+        "column": "B29001e1"
+      }
+    }
+  },
+  {
+    "concept": "b29002",
+    "label": "Citizen, Voting-Age Population By Educational Attainment",
+    "aliases": [
+      "citizen, voting-age population by educational attainment"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B29",
+        "column": "B29002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B29",
+        "column": "B29002e1"
+      }
+    }
+  },
+  {
+    "concept": "b29003",
+    "label": "Citizen, Voting-Age Population By Poverty Status",
+    "aliases": [
+      "citizen, voting-age population by poverty status"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B29",
+        "column": "B29003e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B29",
+        "column": "B29003e1"
+      }
+    }
+  },
+  {
+    "concept": "b29004",
+    "label": "Median Household Income For Households With A Citizen, Voting-Age Householder (In 2019 Inflation-Adjusted Dollars): Median household income in the past 12 months (in 2019 inflation-adjusted dollars)",
+    "aliases": [
+      "median household income for households with a citizen, voting-age householder (in 2019 inflation-adjusted dollars): median household income in the past 12 months (in 2019 inflation-adjusted dollars)"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_B29",
+        "column": "B29004e1"
+      },
+      "2020": {
+        "table": "2020_CBG_B29",
+        "column": "B29004e1"
+      }
+    }
+  },
+  {
+    "concept": "c02003",
+    "label": "Detailed Race",
+    "aliases": [
+      "detailed race"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_C02",
+        "column": "C02003e1"
+      },
+      "2020": {
+        "table": "2020_CBG_C02",
+        "column": "C02003e1"
+      }
+    }
+  },
+  {
+    "concept": "c15010",
+    "label": "Field Of Bachelor's Degree For First Major For The Population 25 Years And Over",
+    "aliases": [
+      "field of bachelor's degree for first major for the population 25 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_C15",
+        "column": "C15010e1"
+      },
+      "2020": {
+        "table": "2020_CBG_C15",
+        "column": "C15010e1"
+      }
+    }
+  },
+  {
+    "concept": "c16002",
+    "label": "Household Language By Household Limited English Speaking Status",
+    "aliases": [
+      "household language by household limited english speaking status"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_C16",
+        "column": "C16002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_C16",
+        "column": "C16002e1"
+      }
+    }
+  },
+  {
+    "concept": "c17002",
+    "label": "Ratio Of Income To Poverty Level In The Past 12 Months",
+    "aliases": [
+      "ratio of income to poverty level in the past 12 months"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_C17",
+        "column": "C17002e1"
+      },
+      "2020": {
+        "table": "2020_CBG_C17",
+        "column": "C17002e1"
+      }
+    }
+  },
+  {
+    "concept": "c21007",
+    "label": "Age By Veteran Status By Poverty Status In The Past 12 Months By Disability Status For The Civilian Population 18 Years And Over",
+    "aliases": [
+      "age by veteran status by poverty status in the past 12 months by disability status for the civilian population 18 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_C21",
+        "column": "C21007e1"
+      },
+      "2020": {
+        "table": "2020_CBG_C21",
+        "column": "C21007e1"
+      }
+    }
+  },
+  {
+    "concept": "c24010",
+    "label": "Sex By Occupation For The Civilian Employed Population 16 Years And Over",
+    "aliases": [
+      "sex by occupation for the civilian employed population 16 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_C24",
+        "column": "C24010e1"
+      },
+      "2020": {
+        "table": "2020_CBG_C24",
+        "column": "C24010e1"
+      }
+    }
+  },
+  {
+    "concept": "c24020",
+    "label": "Sex By Occupation For The Full-Time, Year-Round Civilian Employed Population 16 Years And Over",
+    "aliases": [
+      "sex by occupation for the full-time, year-round civilian employed population 16 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_C24",
+        "column": "C24020e1"
+      },
+      "2020": {
+        "table": "2020_CBG_C24",
+        "column": "C24020e1"
+      }
+    }
+  },
+  {
+    "concept": "c24030",
+    "label": "Sex By Industry For The Civilian Employed Population 16 Years And Over",
+    "aliases": [
+      "sex by industry for the civilian employed population 16 years and over"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_CBG_C24",
+        "column": "C24030e1"
+      },
+      "2020": {
+        "table": "2020_CBG_C24",
+        "column": "C24030e1"
+      }
+    }
+  },
+  {
+    "concept": "redistricting_p002",
+    "label": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE",
+    "aliases": [
+      "hispanic or latino, and not hispanic or latino by race"
+    ],
+    "sources": {
+      "2020": {
+        "table": "2020_REDISTRICTING_CBG_DATA",
+        "column": "P0020001"
+      }
+    }
+  },
+  {
+    "concept": "redistricting_p003",
+    "label": "RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "aliases": [
+      "race for the population 18 years and over"
+    ],
+    "sources": {
+      "2020": {
+        "table": "2020_REDISTRICTING_CBG_DATA",
+        "column": "P0030001"
+      }
+    }
+  },
+  {
+    "concept": "redistricting_p004",
+    "label": "HISPANIC OR LATINO, AND NOT HISPANIC OR LATINO BY RACE FOR THE POPULATION 18 YEARS AND OVER",
+    "aliases": [
+      "hispanic or latino, and not hispanic or latino by race for the population 18 years and over"
+    ],
+    "sources": {
+      "2020": {
+        "table": "2020_REDISTRICTING_CBG_DATA",
+        "column": "P0040001"
+      }
+    }
+  },
+  {
+    "concept": "redistricting_p005",
+    "label": "GROUP QUARTERS POPULATION BY MAJOR GROUP QUARTERS TYPE",
+    "aliases": [
+      "group quarters population by major group quarters type"
+    ],
+    "sources": {
+      "2020": {
+        "table": "2020_REDISTRICTING_CBG_DATA",
+        "column": "P0050001"
+      }
+    }
+  },
+  {
+    "concept": "renter_occupied_housing_units",
+    "label": "Renter-Occupied Housing Units",
+    "aliases": [
+      "renter-occupied housing units",
+      "renters",
+      "renter occupied units"
+    ],
+    "sources": {
+      "2019": {
+        "table": "2019_TOTAL_RENTAL_GEO",
+        "column": "Total: Renter-occupied housing units"
+      }
+    }
+  }
+]

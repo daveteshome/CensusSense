@@ -7,9 +7,17 @@ venv/
 .venv/
 *.egg-info/
 .DS_Store
+.claude/
 
 # Regenerable via scripts/fetch_census_dictionary.py; not used by the app
 # itself, only by one round-trip validation test (which skips cleanly if
 # these are absent) -- excluded to keep the repo lean.
 data/acs_variables_2019.json
 data/acs_variables_2020.json
+
+# Runtime per-account conversation history (SQLite, incl. WAL-mode
+# sidecar files) -- created on first run, holds real chat content, never
+# committed.
+data/conversations.db
+data/conversations.db-shm
+data/conversations.db-wal

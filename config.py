@@ -25,12 +25,29 @@ class Config:
     snowflake_database: str
     snowflake_schema: str
 
-    demo_username: str
-    demo_password: str
+    demo_accounts: dict[str, str]
 
     run_live_snowflake_tests: bool
 
     default_year: str = "2020"
+    conversations_db_path: str = "data/conversations.db"
+
+
+def _parse_demo_accounts(raw: str) -> dict[str, str]:
+    accounts: dict[str, str] = {}
+    for pair in raw.split(","):
+        pair = pair.strip()
+        if not pair:
+            continue
+        username, sep, password = pair.partition(":")
+        if not sep or not username or not password:
+            raise RuntimeError(
+                f"Malformed DEMO_ACCOUNTS entry {pair!r} -- expected user:pass"
+            )
+        accounts[username] = password
+    if not accounts:
+        raise RuntimeError("DEMO_ACCOUNTS must contain at least one user:pass entry")
+    return accounts
 
 
 def load_config() -> Config:
@@ -43,7 +60,7 @@ def load_config() -> Config:
         snowflake_warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE", "CENSUSSENSE_WH"),
         snowflake_database=_require("SNOWFLAKE_DATABASE"),
         snowflake_schema=os.environ.get("SNOWFLAKE_SCHEMA", "PUBLIC"),
-        demo_username=_require("DEMO_USERNAME"),
-        demo_password=_require("DEMO_PASSWORD"),
+        demo_accounts=_parse_demo_accounts(_require("DEMO_ACCOUNTS")),
         run_live_snowflake_tests=os.environ.get("RUN_LIVE_SNOWFLAKE_TESTS", "0") == "1",
+        conversations_db_path=os.environ.get("CONVERSATIONS_DB_PATH", "data/conversations.db"),
     )

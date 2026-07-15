@@ -25,6 +25,19 @@ def test_valid_select_passes(store):
     validate(sql, store)  # should not raise
 
 
+def test_ranking_query_with_value_alias_in_order_by_passes(store):
+    # Regression test: VALUE is sql_builder's own generated alias, not a
+    # real Census column -- the validator must not flag ORDER BY VALUE
+    # as an "unknown column" reference.
+    sql = (
+        'SELECT SUBSTR("CENSUS_BLOCK_GROUP", 1, 2) AS GROUP_FIPS, SUM("B01001e1") AS VALUE '
+        'FROM "2019_CBG_B01" '
+        'GROUP BY SUBSTR("CENSUS_BLOCK_GROUP", 1, 2) '
+        "ORDER BY VALUE DESC LIMIT 1"
+    )
+    validate(sql, store)  # should not raise
+
+
 def test_valid_select_with_county_filter_passes(store):
     sql = (
         'SELECT AVG("B19013e1") AS VALUE, COUNT(*) AS BLOCK_GROUP_COUNT '

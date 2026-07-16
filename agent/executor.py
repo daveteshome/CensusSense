@@ -78,7 +78,18 @@ def execute(cfg: Config, sql: str) -> ExecutionResult:
     implicit activation isn't guaranteed to finish before the first query
     is dispatched when the warehouse needs to resume from suspend; a
     separate, synchronous `USE WAREHOUSE` statement blocks until the
-    warehouse is actually active before the real query ever runs."""
+    warehouse is actually active before the real query ever runs.
+
+    The warehouse name is deliberately *not* double-quoted here -- an
+    initial version quoted it (`USE WAREHOUSE "X"`) and broke in
+    production with "Object does not exist, or operation cannot be
+    performed", because a quoted identifier is matched literally
+    (case- and whitespace-sensitive) while the warehouse was created
+    unquoted (`CREATE WAREHOUSE CENSUSSENSE_WH`, folded to uppercase) and
+    the env var carrying its name isn't guaranteed to be byte-for-byte
+    identical (e.g. trailing whitespace from a pasted Railway config
+    value). An unquoted identifier gets the same normalization Snowflake
+    applied when the warehouse was created, so it matches regardless."""
     last_exc: Optional[Exception] = None
     for attempt in (1, 2):
         conn = _new_connection(cfg)
@@ -86,7 +97,7 @@ def execute(cfg: Config, sql: str) -> ExecutionResult:
             cursor = conn.cursor(snowflake.connector.DictCursor)
             start = time.perf_counter()
             try:
-                cursor.execute(f'USE WAREHOUSE "{cfg.snowflake_warehouse}"')
+                cursor.execute(f"USE WAREHOUSE {cfg.snowflake_warehouse}")
                 cursor.execute(sql)
                 rows = cursor.fetchall()
                 elapsed = time.perf_counter() - start

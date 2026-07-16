@@ -8,9 +8,9 @@ load_dotenv()
 
 def _require(name: str) -> str:
     value = os.environ.get(name)
-    if not value:
+    if not value or not value.strip():
         raise RuntimeError(f"Missing required environment variable: {name}")
-    return value
+    return value.strip()
 
 
 @dataclass(frozen=True)
@@ -56,10 +56,10 @@ def load_config() -> Config:
         snowflake_account=_require("SNOWFLAKE_ACCOUNT"),
         snowflake_user=_require("SNOWFLAKE_USER"),
         snowflake_password=_require("SNOWFLAKE_PASSWORD"),
-        snowflake_role=os.environ.get("SNOWFLAKE_ROLE", "CENSUSSENSE_APP_ROLE"),
-        snowflake_warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE", "CENSUSSENSE_WH"),
+        snowflake_role=os.environ.get("SNOWFLAKE_ROLE", "CENSUSSENSE_APP_ROLE").strip(),
+        snowflake_warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE", "CENSUSSENSE_WH").strip(),
         snowflake_database=_require("SNOWFLAKE_DATABASE"),
-        snowflake_schema=os.environ.get("SNOWFLAKE_SCHEMA", "PUBLIC"),
+        snowflake_schema=os.environ.get("SNOWFLAKE_SCHEMA", "PUBLIC").strip(),
         demo_accounts=_parse_demo_accounts(_require("DEMO_ACCOUNTS")),
         run_live_snowflake_tests=os.environ.get("RUN_LIVE_SNOWFLAKE_TESTS", "0") == "1",
         conversations_db_path=os.environ.get("CONVERSATIONS_DB_PATH", "data/conversations.db"),

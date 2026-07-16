@@ -104,7 +104,10 @@ def execute(cfg: Config, sql: str) -> ExecutionResult:
                 return ExecutionResult(rows=rows, row_count=len(rows), exec_time_seconds=elapsed)
             except Exception as exc:
                 last_exc = exc
-                logger.warning("snowflake query attempt %d failed: %s", attempt, exc)
+                logger.warning(
+                    "snowflake query attempt %d failed (warehouse=%r): %s",
+                    attempt, cfg.snowflake_warehouse, exc,
+                )
             finally:
                 cursor.close()
         finally:

@@ -6,11 +6,23 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+def _clean(value: str) -> str:
+    """Strips whitespace and, defensively, a matching pair of surrounding
+    quote characters -- a copy-pasted env var value in a dashboard UI
+    (e.g. Railway) can end up with literal quotes or trailing whitespace
+    baked into the stored string, which breaks anything that uses the
+    value as a raw, unquoted SQL identifier (see agent/executor.py)."""
+    value = value.strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in ("'", '"'):
+        value = value[1:-1].strip()
+    return value
+
+
 def _require(name: str) -> str:
     value = os.environ.get(name)
     if not value or not value.strip():
         raise RuntimeError(f"Missing required environment variable: {name}")
-    return value.strip()
+    return _clean(value)
 
 
 @dataclass(frozen=True)
@@ -56,10 +68,10 @@ def load_config() -> Config:
         snowflake_account=_require("SNOWFLAKE_ACCOUNT"),
         snowflake_user=_require("SNOWFLAKE_USER"),
         snowflake_password=_require("SNOWFLAKE_PASSWORD"),
-        snowflake_role=os.environ.get("SNOWFLAKE_ROLE", "CENSUSSENSE_APP_ROLE").strip(),
-        snowflake_warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE", "CENSUSSENSE_WH").strip(),
+        snowflake_role=_clean(os.environ.get("SNOWFLAKE_ROLE", "CENSUSSENSE_APP_ROLE")),
+        snowflake_warehouse=_clean(os.environ.get("SNOWFLAKE_WAREHOUSE", "CENSUSSENSE_WH")),
         snowflake_database=_require("SNOWFLAKE_DATABASE"),
-        snowflake_schema=os.environ.get("SNOWFLAKE_SCHEMA", "PUBLIC").strip(),
+        snowflake_schema=_clean(os.environ.get("SNOWFLAKE_SCHEMA", "PUBLIC")),
         demo_accounts=_parse_demo_accounts(_require("DEMO_ACCOUNTS")),
         run_live_snowflake_tests=os.environ.get("RUN_LIVE_SNOWFLAKE_TESTS", "0") == "1",
         conversations_db_path=os.environ.get("CONVERSATIONS_DB_PATH", "data/conversations.db"),
